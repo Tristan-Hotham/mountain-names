@@ -1,0 +1,1522 @@
+qid,label,kind
+Q102083,warrior,occupation
+Q1028181,painter,occupation
+Q10295465,hydrographer,occupation
+Q10297252,detective writer,occupation
+Q10349745,racing automobile driver,occupation
+Q10429346,bibliographer,occupation
+Q10497074,militaryflight_engineer,occupation
+Q105186,pharmacist,occupation
+Q10547393,localpolitician,occupation
+Q1056391,head teacher,occupation
+Q10669499,naval officer,occupation
+Q107212688,exlibrist,occupation
+Q10729326,pirate,occupation
+Q10732476,art collector,occupation
+Q107555801,professorof_medicine,occupation
+Q1076502,choir director,occupation
+Q10798782,television actor,occupation
+Q10800557,film actor,occupation
+Q10833314,tennis player,occupation
+Q10843402,swimmer,occupation
+Q10866633,speed skater,occupation
+Q10871364,baseball player,occupation
+Q10872101,anatomist,occupation
+Q10873124,chess player,occupation
+Q109120509,zoologicalcollector,occupation
+Q1097498,ruler,occupation
+Q1104153,canon,occupation
+Q11063,astronomer,occupation
+Q11085831,interpreter,occupation
+Q11122954,tanka poet,occupation
+Q111367336,directorof_land_survey,occupation
+Q1113838,climatologist,occupation
+Q1114448,cartoonist,occupation
+Q111837,marshal,occupation
+Q1130252,sporting director,occupation
+Q1139055,revenue collector/tax collector,occupation
+Q11455387,furnituredesigner,occupation
+Q11545923,military personnel,occupation
+Q11569986,printmaker,occupation
+Q11573099,royalty,occupation
+Q116,monarch,occupation
+Q1162163,director,occupation
+Q11631,astronaut,occupation
+Q11774156,memoirist,occupation
+Q11774202,essayist,occupation
+Q11774891,ice hockey player,occupation
+Q11900058,explorer,occupation
+Q12013238,ophthalmologist,occupation
+Q12038843,seafarer,occupation
+Q12051314,seismologist,occupation
+Q1208175,camera operator,occupation
+Q12094958,geophysicist,occupation
+Q12097,King,occupation
+Q12144794,prosaist,occupation
+Q121594,professor,occupation
+Q121998,ambassador,occupation
+Q1225716,ornithologist,occupation
+Q12299841,cricketer,occupation
+Q1231865,pedagogue,occupation
+Q1234713,theologian,occupation
+Q12347522,ethnographer,occupation
+Q12356615,traveler,occupation
+Q12359071,anarchist,occupation
+Q12362622,philanthropist,occupation
+Q12372582,plantationowner,occupation
+Q1237385,canon,occupation
+Q1238570,political scientist,occupation
+Q1250916,warrior,occupation
+Q1251441,boss/leader/person in charge,occupation
+Q1259323,ruler,occupation
+Q1259917,violinist,occupation
+Q126236,explorer,occupation
+Q1281618,sculptor,occupation
+Q12859263,orator,occupation
+Q12902372,flautist,occupation
+Q131062,urban planner,occupation
+Q131512,farmer,occupation
+Q131524,entrepreneur,occupation
+Q132050,governor,occupation
+Q13218361,polo player,occupation
+Q13219637,cellist,occupation
+Q13235160,producer,occupation
+Q132851,military personnel,occupation
+Q133485,rabbi,occupation
+Q13381572,artistic gymnast,occupation
+Q13382576,rower,occupation
+Q13382605,Nordic combined skier,occupation
+Q13382608,cross-country skier,occupation
+Q13382749,explorer,occupation
+Q13382981,luger,occupation
+Q1340643,master builder,occupation
+Q13416354,mineralogist,occupation
+Q13418253,philologist,occupation
+Q13424456,hymnwriter,occupation
+Q1344452,discoverer,occupation
+Q1350157,music critic,occupation
+Q13570226,literary historian,occupation
+Q13582652,civil engineer,occupation
+Q1371378,ethnologist,occupation
+Q1371925,announcer,occupation
+Q1397808,resistance fighter,occupation
+Q1402561,military leader,occupation
+Q14089670,rugby union player,occupation
+Q1415090,film score composer,occupation
+Q1420621,media proprietor,occupation
+Q1423891,minister,occupation
+Q1424605,merchant,occupation
+Q14284,solicitor,occupation
+Q14467526,linguist,occupation
+Q14556953,biologist,occupation
+Q1469535,latincatholic_priest,occupation
+Q1476215,human rights activist,occupation
+Q1483709,land owner,occupation
+Q14906342,biophysicist,occupation
+Q14915627,musicologist,occupation
+Q1493121,military historian,occupation
+Q14972848,lexicographer,occupation
+Q15077007,podcaster,occupation
+Q151197,combat engineer,occupation
+Q15142825,crystallographer,occupation
+Q15143191,science communicator,occupation
+Q152002,pastor,occupation
+Q1524582,rancher,occupation
+Q15253558,activist,occupation
+Q15296811,drawer,occupation
+Q15442776,cryptographer,occupation
+Q154549,carpenter,occupation
+Q15472169,patron of the arts,occupation
+Q1553195,politician,occupation
+Q155647,astrologer,occupation
+Q15623737,glaciologist,occupation
+Q15627169,trade unionist,occupation
+Q156839,cook,occupation
+Q1569495,lecturer,occupation
+Q157148,M.Gen./MG/Maj.Gen.,occupation
+Q15816836,bacteriologist,occupation
+Q15839134,ecologist,occupation
+Q158852,conductor,occupation
+Q15895020,aerospace engineer,occupation
+Q15924544,lichenologist,occupation
+Q15949613,short story writer,occupation
+Q15958642,political writer,occupation
+Q15962340,literary theorist,occupation
+Q15980158,non-fiction writer,occupation
+Q15981151,jazz musician,occupation
+Q15982795,bodybuilder,occupation
+Q15995642,religious leader,occupation
+Q16003550,pacifist,occupation
+Q16003954,oboist,occupation
+Q16012028,jurist,occupation
+Q16031530,music theorist,occupation
+Q16060693,conservationist,occupation
+Q16063497,evolutionary biologist,occupation
+Q1607826,editor,occupation
+Q16145150,music pedagogue,occupation
+Q161944,deacon,occupation
+Q1622272,university teacher,occupation
+Q16254673,pamphleteer,occupation
+Q16267607,classical philologist,occupation
+Q16271064,herpetologist,occupation
+Q16271261,malacologist,occupation
+Q16271428,biologist,occupation
+Q16323111,peace activist,occupation
+Q16334507,biologist,occupation
+Q16334509,pteridologist,occupation
+Q16335312,chemist,occupation
+Q16389557,philosopher of science,occupation
+Q164236,war correspondent,occupation
+Q1643514,music arranger,occupation
+Q1650915,researcher,occupation
+Q16532929,administrator,occupation
+Q16533,judge,occupation
+Q16611574,social reformer,occupation
+Q1662561,paleontologist,occupation
+Q16742096,nuclear physicist,occupation
+Q16742175,speleologist,occupation
+Q16744668,chemist,occupation
+Q16755977,racial theorist,occupation
+Q16831721,ethologist,occupation
+Q1685363,propagandist,occupation
+Q16868721,biologist,occupation
+Q168827,religious leader,occupation
+Q169470,physicist,occupation
+Q16947657,lithographer,occupation
+Q16947675,gymnast,occupation
+Q170790,mathematician,occupation
+Q17166634,hagiographer,occupation
+Q17167049,literary scholar,occupation
+Q171692,priest,occupation
+Q1731155,orientalist,occupation
+Q17344952,arachnologist,occupation
+Q1734662,cartographer,occupation
+Q17351648,newspaper editor,occupation
+Q17391638,art theorist,occupation
+Q17488316,prehistorian,occupation
+Q17488392,historian,occupation
+Q17489339,historian of the modern age,occupation
+Q175151,printer,occupation
+Q17682262,lacrosse player,occupation
+Q177220,singer,occupation
+Q17765219,colonialadministrator,occupation
+Q1776724,theatre manager,occupation
+Q17769800,slavetrader,occupation
+Q1779650,engineer,occupation
+Q1781198,agronomist,occupation
+Q178197,warrior,occupation
+Q178521,gunfighter,occupation
+Q1792450,art historian,occupation
+Q179985,actuary,occupation
+Q182436,librarian,occupation
+Q185196,midwife,occupation
+Q1852228,sportsperson,occupation
+Q18524075,mining engineer,occupation
+Q185351,jurist,occupation
+Q18576582,metallurgist,occupation
+Q186360,nurse,occupation
+Q18805,naturalist,occupation
+Q188094,economist,occupation
+Q18814623,autobiographer,occupation
+Q18844224,science fiction writer,occupation
+Q189010,notary,occupation
+Q189290,military officer,occupation
+Q18930007,political philosopher,occupation
+Q18939491,diarist,occupation
+Q1897112,skipper,occupation
+Q189829,hermit,occupation
+Q1906857,mechanical engineer,occupation
+Q191808,nun,occupation
+Q1919436,pediatrician,occupation
+Q1925963,graphic artist,occupation
+Q1930187,journalist,occupation
+Q193391,diplomat,occupation
+Q19340487,priest,occupation
+Q19350898,theoretical physicist,occupation
+Q19507792,scientific illustrator,occupation
+Q1979607,financier,occupation
+Q19801627,skimountaineer,occupation
+Q19934710,air force officer,occupation
+Q1999841,faqih,occupation
+Q2000124,postage stamp designer,occupation
+Q2004963,numismatist,occupation
+Q201559,privateer,occupation
+Q201788,historian,occupation
+Q202883,veterinarian,occupation
+Q2029179,priest,occupation
+Q203184,companion,occupation
+Q205375,inventor,occupation
+Q2055046,physiologist,occupation
+Q2059704,television director,occupation
+Q2066131,athlete,occupation
+Q20726593,helicopter pilot,occupation
+Q20826540,erudite,occupation
+Q2083925,botanicalcollector,occupation
+Q2095549,aircraft pilot,occupation
+Q211346,psychiatrist,occupation
+Q2114605,pharmacologist,occupation
+Q21178131,painter,occupation
+Q212238,civil servant,occupation
+Q21272406,anthropologist,occupation
+Q21281706,academicadministrator,occupation
+Q212948,partisan,occupation
+Q212980,psychologist,occupation
+Q2142783,religious leader,occupation
+Q214917,playwright,occupation
+Q214970,instrumentalist,occupation
+Q215536,merchant,occupation
+Q21680663,composer,occupation
+Q21680731,composer,occupation
+Q2180411,painter,occupation
+Q219477,missionary,occupation
+Q222344,cinematographer,occupation
+Q2251335,school teacher,occupation
+Q2259451,stage actor,occupation
+Q2259532,cleric,occupation
+Q22662561,presenter,occupation
+Q2285706,headof_government,occupation
+Q2304859,sovereign,occupation
+Q2306091,sociologist,occupation
+Q2309784,sport cyclist,occupation
+Q2310145,meteorologist,occupation
+Q2312637,teacher,occupation
+Q2341443,instrument maker,occupation
+Q2374149,botanist,occupation
+Q2405480,voice actor,occupation
+Q24262584,Bible translator,occupation
+Q24266767,newspaper proprietor,occupation
+Q245068,comedian,occupation
+Q2462658,manager,occupation
+Q247797,customs officer,occupation
+Q2478141,aristocrat,occupation
+Q2487799,mycologist,occupation
+Q2490358,choreographer,occupation
+Q250867,Catholic priest,occupation
+Q2516852,literary editor,occupation
+Q2516866,publisher,occupation
+Q2519376,jewellery designer,occupation
+Q2526255,film director,occupation
+Q25393460,catholic deacon,occupation
+Q254651,navigator,occupation
+Q2566598,religious,occupation
+Q2576499,nutritionist,occupation
+Q2599593,germanist,occupation
+Q26237228,epigrammatist,occupation
+Q2627286,outlaw,occupation
+Q2640827,gynaecologist,occupation
+Q2675537,music teacher,occupation
+Q270141,polymath,occupation
+Q2707485,scenographer,occupation
+Q2722764,radio personality,occupation
+Q2732142,statistician,occupation
+Q27349,dentist,occupation
+Q27532437,suffragist,occupation
+Q2815948,landscape architect,occupation
+Q28389,screenwriter,occupation
+Q285759,broker,occupation
+Q2865819,opera singer,occupation
+Q28692502,women's rights activist,occupation
+Q2873500,adventurer,occupation
+Q2917466,occultist,occupation
+Q29182,bishop,occupation
+Q2919046,biochemist,occupation
+Q294126,land surveyor,occupation
+Q2961975,business executive,occupation
+Q29887242,anti-vaccine activist,occupation
+Q2994371,king_scounsel,occupation
+Q2998308,cosmologist,occupation
+Q30185,mayor,occupation
+Q30461,head of state,occupation
+Q3055126,entomologist,occupation
+Q3068305,salonnière,occupation
+Q3075052,folklorist,occupation
+Q3126128,geneticist,occupation
+Q3140857,horticulturist,occupation
+Q3148760,botanical illustrator,occupation
+Q3242115,revolutionary,occupation
+Q3243461,collector,occupation
+Q326358,joiner,occupation
+Q326653,accountant,occupation
+Q327029,mechanic,occupation
+Q3282637,film producer,occupation
+Q328325,stonemason,occupation
+Q329439,engraver,occupation
+Q329455,justice of the peace,occupation
+Q32947888,bank manager,occupation
+Q3303330,calligrapher,occupation
+Q331432,fisher/fisherman/fisherwoman,occupation
+Q3315492,clergyman,occupation
+Q33231,photographer,occupation
+Q333634,translator,occupation
+Q3349700,navy officer,occupation
+Q3368718,pathologist,occupation
+Q3391743,visual artist,occupation
+Q33999,actor,occupation
+Q3400985,academic,occupation
+Q3409374,ancientroman_priest,occupation
+Q3409375,Anglican priest,occupation
+Q3455803,director,occupation
+Q3492027,submariner,occupation
+Q350979,zoologist,occupation
+Q3519259,count,occupation
+Q3546255,oceanographer,occupation
+Q3578589,environmentalist,occupation
+Q3579035,travel writer,occupation
+Q3606216,aphorist,occupation
+Q36180,writer,occupation
+Q3621491,archaeologist,occupation
+Q3640160,marine biologist,occupation
+Q3644587,hydrologist,occupation
+Q3658608,caricaturist,occupation
+Q36834,composer,occupation
+Q37110,pharaoh,occupation
+Q37226,teacher,occupation
+Q372436,statesperson,occupation
+Q373085,chancellor,occupation
+Q3745071,science writer,occupation
+Q3779582,microbiologist,occupation
+Q380782,commander_in_chief,occupation
+Q38239859,armyofficer,occupation
+Q382844,governor_general,occupation
+Q384593,police officer,occupation
+Q39018,emperor,occupation
+Q3951423,climber,occupation
+Q39631,physician,occupation
+Q4002666,military physician,occupation
+Q40348,lawyer,occupation
+Q4144610,alpine skier,occupation
+Q41583,coach,occupation
+Q4164507,art critic,occupation
+Q4205432,ichthyologist,occupation
+Q42603,priest,occupation
+Q4263842,literary critic,occupation
+Q4270517,skier,occupation
+Q42857,prophet,occupation
+Q42909,reporter,occupation
+Q42973,architect,occupation
+Q432386,preacher,occupation
+Q43412,apostle,occupation
+Q43845,businessperson,occupation
+Q4439155,runner,occupation
+Q4479442,founder,occupation
+Q45199,sailor,occupation
+Q4594605,magistrate,occupation
+Q462390,docent,occupation
+Q465501,stunt performer,occupation
+Q47064,military personnel,occupation
+Q476246,sailor,occupation
+Q4773904,anthropologist,occupation
+Q48282,student,occupation
+Q482980,author,occupation
+Q483501,artist,occupation
+Q4853732,children's writer,occupation
+Q486748,pianist,occupation
+Q487596,dramaturge,occupation
+Q488205,singer-songwriter,occupation
+Q4932206,jurisprudence,occupation
+Q49476,priest,occupation
+Q4964182,philosopher,occupation
+Q497294,lepidopterist,occupation
+Q49757,poet,occupation
+Q4991371,soldier,occupation
+Q500251,shipowner,occupation
+Q5121444,intelligence officer,occupation
+Q516463,heraldist,occupation
+Q520549,geologist,occupation
+Q5352191,technician,occupation
+Q5371902,harpsichordist,occupation
+Q5403434,philosopher,occupation
+Q548320,friar,occupation
+Q551835,physician writer,occupation
+Q557880,investor,occupation
+Q5716684,dancer,occupation
+Q5758653,secondaryschool_teacher,occupation
+Q5784340,consort,occupation
+Q593644,chemist,occupation
+Q599151,official,occupation
+Q600751,prosecutor,occupation
+Q6060450,daredevil,occupation
+Q611644,priest,occupation
+Q6138343,wood carver,occupation
+Q618694,fighter pilot,occupation
+Q6337803,neuroscientist,occupation
+Q635734,archivist,occupation
+Q63677188,lawprofessor,occupation
+Q639669,musician,occupation
+Q6430706,critic,occupation
+Q644687,illustrator,occupation
+Q6501749,Secretary-General/first secretary/general secretary,occupation
+Q6606110,industrialist,occupation
+Q6625963,novelist,occupation
+Q662729,public figure,occupation
+Q66711686,railway engineer,occupation
+Q6673651,literary,occupation
+Q674426,curator,occupation
+Q7042855,film editor,occupation
+Q715301,comics artist,occupation
+Q728425,balloonist,occupation
+Q730242,test pilot,occupation
+Q7330070,Minister of Foreign Affairs/foreign minister,occupation
+Q733786,monk,occupation
+Q744738,Encyclopédistes,occupation
+Q749387,military personnel,occupation
+Q752129,astrophysicist,occupation
+Q753110,songwriter,occupation
+Q758780,gardener,occupation
+Q7643464,chief education officer/school chancellor/school superintendent,occupation
+Q765778,organist,occupation
+Q774306,surgeon,occupation
+Q783906,neurologist,occupation
+Q7940086,volcanologist,occupation
+Q805221,ballet dancer,occupation
+Q806798,banker,occupation
+Q808967,barrister,occupation
+Q81096,engineer,occupation
+Q8178443,librettist,occupation
+Q819677,mountaineer,occupation
+Q820037,miner,occupation
+Q822146,lyricist,occupation
+Q82594,computer scientist,occupation
+Q829064,soldier,occupation
+Q82955,politician,occupation
+Q831474,presbyter,occupation
+Q83307,minister,occupation
+Q846430,futurist,occupation
+Q852389,beekeeper,occupation
+Q854997,bhikkhu,occupation
+Q860918,Esperantist,occupation
+Q864380,biographer,occupation
+Q864503,biologist,occupation
+Q872181,scouting,occupation
+Q876864,contributing editor,occupation
+Q8963721,genealogist,occupation
+Q899758,violist,occupation
+Q901,scientist,occupation
+Q901402,geographer,occupation
+Q911554,business magnate,occupation
+Q9149093,mountaineer,occupation
+Q9334029,satirist,occupation
+Q937857,association football player,occupation
+Q9379869,lecturer,occupation
+Q9385011,neurosurgeon,occupation
+Q943995,impresario,occupation
+Q947873,television presenter,occupation
+Q948329,character actor,occupation
+Q955464,parson,occupation
+Q957729,photojournalist,occupation
+Q96236305,lutheranpastor,occupation
+Q974144,educator,occupation
+Q978044,executiveofficer,occupation
+Q98544732,scientificcollector,occupation
+Q98833890,catholictheologian,occupation
+Q998550,bookseller,occupation
+Q100,Boston,item
+Q1000217,Eveleth,item
+Q1000404,Pryluky,item
+Q1000717,Tewkesbury,item
+Q1002133,Dunbar,item
+Q1007106,Totnes,item
+Q1009,Cameroon,item
+Q1009340,Oldmeldrum,item
+Q1009859,Hagley,item
+Q1010100,Klushino,item
+Q1010180,Lochwinnoch,item
+Q1010531,Forres,item
+Q1011416,Dingwall,item
+Q1012,Celje,item
+Q1012044,Skelton,item
+Q1012076,Richmond,item
+Q1012401,Jedburgh,item
+Q1012665,Durango,item
+Q1013162,Tuba City,item
+Q1015681,Lower Hutt,item
+Q1016139,Lebanon,item
+Q1016603,Lisbon,item
+Q1016788,Burnham Thorpe,item
+Q1016878,Mildenhall,item
+Q1017,Aachen,item
+Q1018540,Leith,item
+Q1018668,Wilton,item
+Q1019805,Oneonta,item
+Q1020214,Mons-en-Laonnois,item
+Q1020678,Independence,item
+Q1022447,Cleckheaton,item
+Q1022967,Sobotište,item
+Q1027,Mauritius,item
+Q10305,Zaragoza,item
+Q1040,Karlsruhe,item
+Q10428388,Bergen Municipality,item
+Q10429617,Billeberga parish,item
+Q10475816,Domkyrkoförsamlingen in Göteborg,item
+Q1049,Sudan,item
+Q10495587,Finnish church parish,item
+Q10525318,Holms,item
+Q105313,Kingdom of Wessex,item
+Q10543924,Karlstad church parish,item
+Q10546040,Klara Church Parish,item
+Q1055,Hamburg,item
+Q10550317,Kungsholm parish,item
+Q10553938,Landskrona Parish,item
+Q10562793,Linköping Cathedral Congregation,item
+Q1056542,Easton,item
+Q1062422,Konbaung dynasty,item
+Q1065488,Cheney,item
+Q10673304,Solna,item
+Q10683918,"Sunne församling, Härnösands stift",item
+Q10686,Belfast,item
+Q10690,Cardiff,item
+Q10704,Tórshavn,item
+Q10707814,Parish of St Gertrud of Germany,item
+Q107135,Fredrikstad Municipality,item
+Q10723793,Ystad church parish,item
+Q10728033,Österhaninge church parish,item
+Q107351,Hammerfest,item
+Q107392,Tønsberg,item
+Q107401,Sivas,item
+Q1085,Prague,item
+Q109005,Sandefjord,item
+Q1090113,Swardeston,item
+Q109036,Haugesund Municipality,item
+Q109048,Horten Municipality,item
+Q109092,Kilkenny,item
+Q1092573,Dolomieu,item
+Q109483,Kristiansund Municipality,item
+Q11025,Semarang,item
+Q1109279,First Mexican Republic,item
+Q111031682,Saint-André-Est,item
+Q111048,Veliky Ustyug,item
+Q1115291,Thonburi Kingdom,item
+Q11299,Manhattan,item
+Q1130655,Cresson,item
+Q113740,Eidsberg Municipality,item
+Q114,Kenya,item
+Q1141046,Crosby,item
+Q1143278,Twickenham,item
+Q1150285,Hambledon,item
+Q1155700,Rattanakosin Kingdom,item
+Q11768,Ancient Egypt,item
+Q1189121,Tokyo Prefecture,item
+Q1192860,Thomasville,item
+Q1204,Illinois,item
+Q1208462,Richmond,item
+Q1212,Montana,item
+Q12191,Nantes,item
+Q122258199,Mishaninskaya,item
+Q1228829,Portsea Island,item
+Q1229288,Diss,item
+Q123027565,Kashmir Sultanate,item
+Q12363259,Hagudi manor,item
+Q123709,Dundee,item
+Q1241544,Donington,item
+Q124230,Paddington,item
+Q124394,Highbury,item
+Q12443,Marquette,item
+Q1249595,Sarykol District,item
+Q125163,Islington,item
+Q125344,Downe,item
+Q12544,Byzantine Empire,item
+Q12557,Mongol Empire,item
+Q125652,Neuburg an der Donau,item
+Q1258454,Dresden,item
+Q126514,Dumfries and Galloway,item
+Q128069,Syracuse,item
+Q128147,Kingston upon Hull,item
+Q12868456,Rustavi,item
+Q12892,Antwerp,item
+Q1295,Dortmund,item
+Q1296,Ghent,item
+Q1297,Chicago,item
+Q130191,Norwich,item
+Q1302772,Ptolemais Hermiou,item
+Q131908,Hanover,item
+Q1324436,Trondheim municipality,item
+Q132671,Pau,item
+Q13298,Graz,item
+Q133056,mountain pass,item
+Q133073,Dunedin,item
+Q133116,Hamilton,item
+Q1335,Montevideo,item
+Q13375,Pisa,item
+Q133838,Votkinsk,item
+Q1339305,Romford,item
+Q1342,Pittsburgh,item
+Q1345,Philadelphia,item
+Q134902,Stoke-on-Trent,item
+Q13533316,Rhodes,item
+Q13580795,Samos,item
+Q136694666,Dzerzhinovo (chutar),item
+Q13695,Tenochtitlan,item
+Q1370,Virginia,item
+Q1375967,Port Conway,item
+Q1384,New York,item
+Q1391,Maryland,item
+Q1393,Delaware,item
+Q139319,Russian Republic,item
+Q139473,Sherbrooke,item
+Q1397,Ohio,item
+Q13972,Tartu,item
+Q1400,Pennsylvania,item
+Q141410,Louiseville,item
+Q141558,Carleton-sur-Mer,item
+Q141968,Kingsey Falls,item
+Q142,France,item
+Q142024,Rivière-du-Loup,item
+Q142250,Lachute,item
+Q1425428,Newcastle upon Tyne,item
+Q1428,Georgia,item
+Q1449,Genoa,item
+Q145,United Kingdom,item
+Q1451001,Väfversunda,item
+Q1461,Manila,item
+Q146307,Děčín,item
+Q146342,Teplice,item
+Q14683998,Smithflat,item
+Q14712874,Monroe Hall,item
+Q1479,Bordeaux,item
+Q148,People's Republic of China,item
+Q14805,Kaufbeuren,item
+Q14815,Weißenfels,item
+Q148349,Lambeth,item
+Q1486,Buenos Aires,item
+Q14882,Schorndorf,item
+Q1489,Mexico City,item
+Q1492,Barcelona,item
+Q1501581,Markethill,item
+Q15030884,Newington Butts,item
+Q15180,Soviet Union,item
+Q1522,New Mexico,item
+Q1524,Athens,item
+Q15270,Kingisepp,item
+Q1533,Caracas,item
+Q153647,St Helens,item
+Q1537,Wisconsin,item
+Q1543476,Wik Castle,item
+Q1546,Iowa,item
+Q15468,Badalona,item
+Q155,Brazil,item
+Q155226,Bad Oldesloe,item
+Q155767,Krasnoturyinsk,item
+Q155955,Kuybyshev,item
+Q156125,Larvik,item
+Q1563,Havana,item
+Q156747,Poltava,item
+Q156858,Struga,item
+Q1569775,Viroqua,item
+Q1570884,Halesworth,item
+Q1581,Missouri,item
+Q1586842,Ross and Cromarty,item
+Q159,Russia,item
+Q1595289,sacred mountain,item
+Q159631,Kingdom of Württemberg,item
+Q16,Canada,item
+Q16017,Zweibrücken,item
+Q160173,Ruse,item
+Q1603,Kentucky,item
+Q160493,Inverness,item
+Q160642,Salisbury,item
+Q16101,Braintree,item
+Q161741,1st arrondissement of Paris,item
+Q163,Yorkshire,item
+Q1630,Altona,item
+Q163132,Akron,item
+Q163239,Balochistan,item
+Q163584,Derry,item
+Q163795,Valenciennes,item
+Q1650,Weser,item
+Q16552,San Diego,item
+Q16553,San Jose,item
+Q16559,Austin,item
+Q16565,Charlotte,item
+Q16567,Columbus,item
+Q16568,Jacksonville,item
+Q166997,Nevers,item
+Q167155,Kalamazoo,item
+Q1679567,Jakobstad,item
+Q16869,Constantinople,item
+Q168782,Tobolsk,item
+Q17,Japan,item
+Q170072,Dutch Republic,item
+Q170263,Chester,item
+Q17042,Oakland,item
+Q170507,Nanterre,item
+Q1709,Schwerin,item
+Q1711,Potsdam,item
+Q1715,Hanover,item
+Q172,Toronto,item
+Q172157,Winchester,item
+Q1726,Munich,item
+Q173,Alabama,item
+Q1731,Dresden,item
+Q173474,Veliko Tarnovo,item
+Q1735,Innsbruck,item
+Q17393,Concarneau,item
+Q1741,Vienna,item
+Q174234,Aurillac,item
+Q174247,Mâcon,item
+Q1747689,Ancient Rome,item
+Q1748,Copenhagen,item
+Q1754,Stockholm,item
+Q1754760,Santos Dumont,item
+Q1757,Helsinki,item
+Q1757189,Toxteth,item
+Q176,Quebec,item
+Q1761,Dublin,item
+Q1762809,Newport,item
+Q1769522,Jefferson,item
+Q1770,Tallinn,item
+Q1773,Riga,item
+Q178093,Poughkeepsie,item
+Q178310,Peterhof,item
+Q178385,Sliven,item
+Q1786145,Port Glasgow,item
+Q1787206,Windsor,item
+Q1787559,Saint Albans,item
+Q179224,Dover,item
+Q179385,Greenwich,item
+Q1794,Frankfurt,item
+Q179830,Jelgava,item
+Q179876,Kingdom of England,item
+Q1799,Wrocław,item
+Q180871,Compiègne,item
+Q18125,Manchester,item
+Q1812896,Adams Center,item
+Q181557,Kaohsiung,item
+Q1816620,Rugeley,item
+Q1818234,Ripple,item
+Q181830,Shumen,item
+Q183,Germany,item
+Q18383,Providence,item
+Q18389,New England,item
+Q184,Belarus,item
+Q184163,Colchester,item
+Q18419,Brooklyn,item
+Q18432,Staten Island,item
+Q184345,Viña del Mar,item
+Q184579,Bolton,item
+Q184883,Moulins,item
+Q185075,Saint-Germain-en-Laye,item
+Q1851,Arkhangelsk,item
+Q185582,Knoxville,item
+Q1858612,North Perrott,item
+Q186096,Tsardom of Russia,item
+Q1861,Bangkok,item
+Q1864473,Mont aux Potences - Galgenberg,item
+Q186466,Almaty Region,item
+Q188553,Batavian Republic,item
+Q189,Iceland,item
+Q1891,Bologna,item
+Q189328,Lovech,item
+Q189502,Vratsa,item
+Q189602,Missoula,item
+Q18986,Pergamon,item
+Q1899,Kyiv,item
+Q1904,Ontario,item
+Q191,Estonia,item
+Q191047,Ilulissat,item
+Q191465,Rzhev,item
+Q1914731,Mitchellville,item
+Q19157,Pervouralsk,item
+Q192176,Bender,item
+Q1923249,Hartington,item
+Q1926981,Rochford,item
+Q1930,Ottawa,item
+Q193180,Kajaani,item
+Q1931946,Middlesex County,item
+Q193342,Rostov Veliky,item
+Q1933738,Brighton,item
+Q1939301,Sacaton,item
+Q1939361,Windsor,item
+Q194145,Château-Thierry,item
+Q194420,16th arrondissement of Paris,item
+Q194623,Sim,item
+Q1947480,Bocking,item
+Q1959546,Leighlinbridge,item
+Q1963,Khartoum,item
+Q1981775,Deddington,item
+Q20,Norway,item
+Q200166,Kitchener,item
+Q200251,Kōchi-shi,item
+Q20071,Glauchau,item
+Q200763,Kirchheimbolanden,item
+Q20138,Roxbury,item
+Q2015708,Cheetham Hill,item
+Q202177,Angus,item
+Q2026888,Sharpsburg,item
+Q2028,Verona,item
+Q202954,Verviers,item
+Q202973,Kingston,item
+Q203293,Langres,item
+Q203380,Napier,item
+Q203529,Lons-le-Saunier,item
+Q2042400,Overpeck,item
+Q2042664,Stoke-by-Nayland,item
+Q2044,Florence,item
+Q204709,Schiedam,item
+Q204720,Hereford,item
+Q205584,Étampes,item
+Q205586,Dole,item
+Q2056235,Millville,item
+Q205905,Lancaster,item
+Q20657950,Lim Rock,item
+Q2066,Essen,item
+Q206903,Kırklareli,item
+Q206988,Cheltenham,item
+Q207326,summit,item
+Q207385,Kensington Palace,item
+Q2079,Leipzig,item
+Q208209,Penzance,item
+Q208257,Bedford,item
+Q208262,Eastbourne,item
+Q208948,Rotorua,item
+Q2090,Nuremberg,item
+Q21,England,item
+Q210205,Pest,item
+Q211,Latvia,item
+Q2119,Mannheim,item
+Q211950,Dunfermline,item
+Q212,Ukraine,item
+Q212289,Palmerston North,item
+Q212332,Kanchipuram,item
+Q212826,West Bromwich,item
+Q213,Czech Republic,item
+Q213180,Maidstone,item
+Q21319,Parramatta,item
+Q2132,Victoria,item
+Q213485,Lerwick,item
+Q2135,Winnipeg,item
+Q213832,Dudley,item
+Q214,Slovakia,item
+Q2141,Halifax,item
+Q214575,Vendôme,item
+Q2146570,Reudnitz,item
+Q215,Slovenia,item
+Q2166359,Wandsworth,item
+Q21667760,Akatovo,item
+Q217,Moldova,item
+Q21711493,Christiania,item
+Q217346,Ithaca,item
+Q217831,Greenock,item
+Q218,Romania,item
+Q2181584,Davenham,item
+Q219,Bulgaria,item
+Q219060,Palestine,item
+Q219382,Lwówek Śląski,item
+Q220,Rome,item
+Q2209469,Pendleton,item
+Q221,North Macedonia,item
+Q2211,Malmö,item
+Q2213391,Croydon,item
+Q2214,Pskov,item
+Q2229417,Mantorville,item
+Q223,Greenland,item
+Q224,Croatia,item
+Q2247131,Bollington,item
+Q2256,Birmingham,item
+Q227,Azerbaijan,item
+Q2272,Skien,item
+Q2274699,Shirburn,item
+Q2277,Roman Empire,item
+Q22889,Bath,item
+Q22890,Ireland,item
+Q2290,Porsgrunn,item
+Q2296779,Glebe,item
+Q230,Georgia,item
+Q23042350,Finnøy,item
+Q2305208,Russian Socialist Federative Soviet Republic,item
+Q23064,Cheshire,item
+Q23077,Lancashire,item
+Q2308650,Deptford,item
+Q23090,Lincolnshire,item
+Q23105,Staffordshire,item
+Q23148,Cornwall,item
+Q23154,Bristol,item
+Q23156,Devon,item
+Q23157,Somerset,item
+Q23183,Wiltshire,item
+Q23197,Nashville,item
+Q232,Kazakhstan,item
+Q2320005,Ptolemaic Kingdom,item
+Q23204,Hampshire,item
+Q23220,Berkshire,item
+Q2323182,Salisbury,item
+Q23240,Essex,item
+Q2330132,Stillingfleet,item
+Q233121,Patara,item
+Q233892,Rockford,item
+Q2342211,Carmen de Patagones,item
+Q23436,Edinburgh,item
+Q235,Monaco,item
+Q235208,Ciboure,item
+Q23556,Atlanta,item
+Q236,Montenegro,item
+Q2362440,Upton upon Severn,item
+Q23661,Wellington,item
+Q2368947,Lismore Castle,item
+Q23698547,Woodington,item
+Q2371380,San Andreas,item
+Q2375704,Great Shelford,item
+Q237896,Reading,item
+Q23792,Palestine,item
+Q23894249,Erasbach,item
+Q239,Brussels,item
+Q239193,Kirkliston,item
+Q241,Cuba,item
+Q241684,Cockermouth,item
+Q2417187,Salisbury,item
+Q2418377,Dighton,item
+Q242,Belize,item
+Q2427125,Shapwick,item
+Q242783,Okazaki,item
+Q244196,Condé-sur-Noireau,item
+Q2446296,Brooklyn,item
+Q24639,Vancouver,item
+Q2465296,Old Alresford,item
+Q246884,Lewes,item
+Q24826,Liverpool,item
+Q2483346,Stoke Newington,item
+Q24861,Albany,item
+Q24879,Bremen,item
+Q2495519,Utica,item
+Q249884,Saint-Pierre,item
+Q25,Wales,item
+Q2500974,Richmond,item
+Q2508832,Sapiston,item
+Q252,Indonesia,item
+Q25286,Uppsala,item
+Q25287,Gothenburg,item
+Q2532075,Winston,item
+Q25390,Leeuwarden,item
+Q25416,Stavanger,item
+Q2553169,Dennington,item
+Q25610,Hampstead,item
+Q2572260,Bozrah,item
+Q25724,Norrköping,item
+Q2572425,Harwinton,item
+Q258,South Africa,item
+Q25804,Trondheim,item
+Q25893,Rutland,item
+Q2597352,Kingdom of Norway,item
+Q2598,Watford,item
+Q260320,Steyr,item
+Q2606178,Zalavas,item
+Q26087,Tromsø Municipality,item
+Q2631587,Dysart,item
+Q2634,Naples,item
+Q265,Uzbekistan,item
+Q26525,Drammen,item
+Q2656,Palermo,item
+Q26563,Roskilde,item
+Q2661769,Subotiv,item
+Q26772254,Kristiansand,item
+Q26793,Bergen,item
+Q2684,Vladimir,item
+Q26849,Vienne,item
+Q269980,Newry,item
+Q27,Ireland,item
+Q270,Warsaw,item
+Q270704,Třebíč,item
+Q2711986,Hynčice,item
+Q271395,Scranton,item
+Q27306,Kingdom of Prussia,item
+Q2736093,Ramsbottom,item
+Q2749,Augsburg,item
+Q275118,9th arrondissement of Paris,item
+Q275178,Aytos,item
+Q2752145,Pacheco,item
+Q277162,Hammersmith,item
+Q2773,Brunswick,item
+Q279000,South Shields,item
+Q28,Hungary,item
+Q2807,Madrid,item
+Q28237,Lansing,item
+Q284604,Kłodzko,item
+Q28513,Austria–Hungary,item
+Q285658,First Mexican Empire,item
+Q2861,Rostock,item
+Q28726684,Annecy,item
+Q287590,Launceston,item
+Q2887,Santiago,item
+Q288781,Kensington,item
+Q29,Spain,item
+Q2901467,Laneast,item
+Q29234,Saint-Brieuc,item
+Q2942,Solingen,item
+Q2946,Palace of Versailles,item
+Q29520,China,item
+Q2968762,Château de Canon,item
+Q2969483,Kilkea Castle,item
+Q2971,Paderborn,item
+Q2971704,Château du Gô,item
+Q2973,Darmstadt,item
+Q298,Chile,item
+Q2991947,Conches,item
+Q30,United States,item
+Q3012,Ulm,item
+Q304478,Sullivan,item
+Q305230,Mixbury,item
+Q3056724,Syosset,item
+Q30974,Rouen,item
+Q31,Belgium,item
+Q31057,Norfolk Island,item
+Q3118,Oryol,item
+Q3123210,Rouses Point,item
+Q3126,Erlangen,item
+Q3130,Sydney,item
+Q3130238,Henderson,item
+Q3141,Melbourne,item
+Q3150,Jena,item
+Q316841,Karlovo,item
+Q31805,Invercargill,item
+Q3183,Perth,item
+Q3224,New South Wales,item
+Q3232468,Les Escoumins,item
+Q3250388,North East,item
+Q326295,Plymouth,item
+Q327012,Bangor,item
+Q327727,Osterode am Harz,item
+Q329833,Tarnowskie Góry,item
+Q33,Finland,item
+Q3301385,Länghem,item
+Q3316008,Woolsthorpe Manor,item
+Q3321646,Kvikne,item
+Q3344,2nd arrondissement of Lyon,item
+Q33486,Hartford,item
+Q33959,Nice,item
+Q3396445,Alloway,item
+Q33986,Valparaíso,item
+Q34,Sweden,item
+Q340,Montreal,item
+Q3410,Hertfordshire,item
+Q34217,Oxford,item
+Q34266,Russian Empire,item
+Q3427889,Katarina church parish,item
+Q3438210,Maria Magdalena parish,item
+Q3446438,Ruardean,item
+Q3447567,Springfield,item
+Q3447986,West Gardiner,item
+Q3448143,New Gloucester,item
+Q3453220,Cornwall-on-Hudson,item
+Q34600,Kyoto,item
+Q3463458,Saint-Ulric,item
+Q3464159,Sainte-Anne-de-la-Pérade,item
+Q34713,Salzburg,item
+Q34739,Dayton,item
+Q3476065,Meridian,item
+Q34779,Dumbarton,item
+Q34820,Santo Domingo,item
+Q3486831,Smailholm,item
+Q35,Denmark,item
+Q35086,South Georgia and the South Sandwich Islands,item
+Q35493,Almaty,item
+Q3572,Tunis,item
+Q35775,Boise,item
+Q36,Poland,item
+Q3612,Antofagasta,item
+Q3617923,Annapolis Junction,item
+Q3624193,Almington,item
+Q36600,The Hague,item
+Q36687,Victoria,item
+Q368045,Chester,item
+Q37,Lithuania,item
+Q37066,Bismarck,item
+Q370736,Cape Colony,item
+Q3708294,Deerfield,item
+Q3708358,Gerry,item
+Q3709023,Johnsburg,item
+Q3709186,New Lisbon,item
+Q3709884,Riga,item
+Q37100,Auckland,item
+Q37320,Cleveland,item
+Q37333,Lublin,item
+Q374458,Stretford,item
+Q375314,Folkestone,item
+Q3776669,Logierait,item
+Q37776,Besançon,item
+Q3778,Zwickau,item
+Q37836,Milwaukee,item
+Q3786,Esslingen am Neckar,item
+Q379121,Bad König,item
+Q38,Italy,item
+Q3834,Constance,item
+Q385060,Camberwell,item
+Q38511,Turku,item
+Q38733,Helena,item
+Q3874,Giessen,item
+Q387406,Świdwin,item
+Q39,Switzerland,item
+Q390036,St Fagans,item
+Q39042,Cheyenne,item
+Q391159,Bansko,item
+Q3920,Lüneburg,item
+Q393087,Żelazowa Wola,item
+Q39383,Bodø,item
+Q393955,Židlochovice,item
+Q399,Armenia,item
+Q3992,Liège,item
+Q40,Austria,item
+Q40104,Ajaccio,item
+Q4017677,Wainfleet All Saints,item
+Q40191,Hobart,item
+Q403,Serbia,item
+Q405114,Velingrad,item
+Q405842,Bratsigovo,item
+Q40623,Quedlinburg,item
+Q4065,Stralsund,item
+Q407193,Kintore,item
+Q407239,Byala cherkva,item
+Q4072887,Afshona,item
+Q407340,Chirpan,item
+Q408,Australia,item
+Q40832,Vigevano,item
+Q40881,Carson City,item
+Q4093,Glasgow,item
+Q41,Greece,item
+Q4120832,Königsberg,item
+Q41252,Bydgoszcz,item
+Q41262,Nottingham,item
+Q414,Argentina,item
+Q41572,Mykolaiv,item
+Q41753,Klagenfurt am Wörthersee,item
+Q4214859,Karevo,item
+Q42182,Buckingham Palace,item
+Q423,North Korea,item
+Q42308,Kharkiv,item
+Q42328401,Tromsø,item
+Q424901,Grimsby,item
+Q42810,Le Havre,item
+Q43,Turkey,item
+Q430464,Dearborn,item
+Q43048,Rhodes,item
+Q43196,Cincinnati,item
+Q43287,German Empire,item
+Q43382,Plymouth,item
+Q43421,Richmond,item
+Q43475,Derby,item
+Q43631,Leiden,item
+Q43788,Madison,item
+Q44012,Trois-Rivières,item
+Q441541,Marton,item
+Q44160,Toulon,item
+Q44198,Brampton,item
+Q44237,Mendoza,item
+Q45,Portugal,item
+Q456,Lyon,item
+Q45755,Bazentin,item
+Q45848,Brechin,item
+Q45888,Burg Stargard,item
+Q459,Plovdiv,item
+Q4628,Faroe Islands,item
+Q467664,Butte,item
+Q46831,mountain range,item
+Q46940,Alcalá de Henares,item
+Q4697677,Antony,item
+Q47045,Saint-Denis,item
+Q472,Sofia,item
+Q4736843,Altofts,item
+Q474782,Innichen,item
+Q47554,Toruń,item
+Q47716,Charleston,item
+Q478029,Falmouth,item
+Q4823363,Austinville,item
+Q482552,Spanish Fork,item
+Q482989,Beaver,item
+Q48320,Kobe,item
+Q48338,Kayseri,item
+Q48370,Manchester,item
+Q485502,Mahoning County,item
+Q486329,Fergana,item
+Q48637,Ringebu Municipality,item
+Q486577,Lennep,item
+Q4881598,Bekesbourne,item
+Q489362,Bindal Municipality,item
+Q489806,Melk,item
+Q490,Milan,item
+Q49111,Cambridge,item
+Q49145,New Haven,item
+Q49164,Amherst,item
+Q49172,New Britain,item
+Q49186,Northampton,item
+Q49191,Portsmouth,item
+Q49196,Newton,item
+Q49199,Somerville,item
+Q49218,Rochester,item
+Q492355,Winchester,item
+Q49239,Toledo,item
+Q49240,Stockton,item
+Q494295,Owensboro,item
+Q494747,Guben,item
+Q495,Turin,item
+Q495373,Visalia,item
+Q4975790,Broughton,item
+Q497793,Bendigo,item
+Q5002543,Butleigh,item
+Q501319,Charles County,item
+Q501499,Vyatskoye,item
+Q501661,Schleswig,item
+Q501773,Bethsaida,item
+Q50306,Yeongwol County,item
+Q503637,Vang,item
+Q504348,Hildburghausen,item
+Q505147,Weil der Stadt,item
+Q50619,Vestfold,item
+Q507517,Rochester,item
+Q5083,Seattle,item
+Q5092,Baltimore,item
+Q5112,Adelaide,item
+Q51599,Punta Arenas,item
+Q516485,Friedberg,item
+Q517311,Bleicherode,item
+Q5211498,Dallowgill,item
+Q522398,Kimbolton,item
+Q5245991,Oslo Municipality,item
+Q526576,Thurso,item
+Q530296,Lanarkshire,item
+Q530930,Kronprinzenpalais,item
+Q531311,Teignmouth,item
+Q53194,San Vito al Tagliamento,item
+Q533166,Tutzing,item
+Q54006791,Jakob and Johannes parish,item
+Q54050,hill,item
+Q541348,Southsea,item
+Q54138,Beverly,item
+Q54140,Salem,item
+Q54195,Weymouth,item
+Q54264,Newport,item
+Q548790,Niles,item
+Q55,Netherlands,item
+Q556200,Piła,item
+Q559010,Parchim,item
+Q5596854,Granville,item
+Q56260977,Môtier,item
+Q5627,Ulyanovsk,item
+Q5642913,Hallett,item
+Q56619307,Lochfield,item
+Q56869,Asker,item
+Q570401,Anstruther,item
+Q57076,Bærum Municipality,item
+Q5715,Memphis,item
+Q573757,Usk,item
+Q5743554,Herongate,item
+Q575129,Carlinville,item
+Q5776,Bethlehem,item
+Q577878,Rock Island,item
+Q577923,LaSalle,item
+Q57868,Oppegård Municipality,item
+Q57919,Arendal Municipality,item
+Q582861,Marinid dynasty,item
+Q584478,Waimate,item
+Q585,Oslo,item
+Q586,Bonn,item
+Q58780,Hasselt,item
+Q587996,Cowes,item
+Q5902400,Hortonville,item
+Q593655,East Coker,item
+Q597,Lisbon,item
+Q599416,Sinop,item
+Q60,New York City,item
+Q600301,Troy,item
+Q603029,Redfield,item
+Q605491,Morro Bay,item
+Q606860,Vestre Aker,item
+Q60847808,Saint-Germain-en-Laye,item
+Q61,"Washington, D.C.",item
+Q613167,Mount Pleasant,item
+Q6168409,Wyndham,item
+Q617,Padua,item
+Q61890,Marbach am Neckar,item
+Q62,San Francisco,item
+Q62266,Ålesund Municipality,item
+Q623687,Falkirk,item
+Q62651,Denmark–Norway,item
+Q630668,Arbroath,item
+Q631915,San Rafael,item
+Q639040,Saint-Nicolas-de-la-Grave,item
+Q6397066,Shiraz,item
+Q64,Berlin,item
+Q6408032,Kilmington,item
+Q641,Venice,item
+Q64123,Meiringen,item
+Q6441,Montpellier,item
+Q647,Rennes,item
+Q648,Lille,item
+Q6481369,Lamberton,item
+Q649,Moscow,item
+Q654216,Ayr,item
+Q654226,East Kilbride,item
+Q654268,Oskarshamn,item
+Q65430768,Spring Grove,item
+Q6548,Orléans,item
+Q65548348,Sainte-Agnès,item
+Q6555,Narbonne,item
+Q655874,Newbury,item
+Q656,Saint Petersburg,item
+Q6602,Strasbourg,item
+Q660821,Raiding,item
+Q6625,Agen,item
+Q664,New Zealand,item
+Q665330,Ledbury,item
+Q667475,Satsuma Province,item
+Q66768461,The Manse,item
+Q668,India,item
+Q668262,Tavistock,item
+Q671662,Towanda,item
+Q68230,Meyrin,item
+Q6886651,Mobberley,item
+Q6901020,Monkwearmouth,item
+Q691,Papua New Guinea,item
+Q691237,Freehold,item
+Q691685,Kirkcaldy,item
+Q6919326,Mount Albert,item
+Q693259,Chavaniac-Lafayette,item
+Q69401,Morges,item
+Q69587,Veyrier,item
+Q6986,Gotha,item
+Q70,Bern,item
+Q702259,Elberfeld,item
+Q7030,Wismar,item
+Q70387,Visperterminen,item
+Q7042,Amberg,item
+Q70488,Boudevilliers,item
+Q71,Geneva,item
+Q7148079,Patrixbourne,item
+Q717,Venezuela,item
+Q71724,Lorient,item
+Q72,Zurich,item
+Q721060,Kazerun,item
+Q72259,Portsmouth,item
+Q727,Amsterdam,item
+Q730,Suriname,item
+Q7318,Nazi Germany,item
+Q7331981,Rickinghall,item
+Q734378,Yonezawa,item
+Q736,Ecuador,item
+Q738144,United Provinces of the Río de la Plata,item
+Q739,Colombia,item
+Q7436,Gatchina,item
+Q745175,Spilsby,item
+Q746718,Birkenhead,item
+Q750444,Stockholm Palace,item
+Q753949,Atchison,item
+Q756617,Kingdom of Denmark,item
+Q757390,Richmond,item
+Q761,Białystok,item
+Q766,Jamaica,item
+Q766594,Bewdley,item
+Q767364,Keene,item
+Q77,Uruguay,item
+Q771,Massachusetts,item
+Q779,Connecticut,item
+Q78,Basel,item
+Q781,Antigua and Barbuda,item
+Q786,Dominican Republic,item
+Q79,Egypt,item
+Q790,Haiti,item
+Q792596,Axminster,item
+Q794,Iran,item
+Q7947,Pushkin,item
+Q7969498,Warley Town,item
+Q79990,Christchurch,item
+Q800122,Bago,item
+Q801,Israel,item
+Q80338,Bengal,item
+Q805175,Ballater,item
+Q8055944,Yosemite Village,item
+Q807,Lausanne,item
+Q80702,Spanish Empire,item
+Q8072,volcano,item
+Q810,Jordan,item
+Q810196,Basingstoke,item
+Q810784,Bath,item
+Q813,Kyrgyzstan,item
+Q813552,Bebington,item
+Q813574,Beccles,item
+Q817301,Benicia,item
+Q820059,Saint-Laurent-en-Grandvaux,item
+Q82185,La Rochelle,item
+Q824,Oregon,item
+Q826782,Stafford,item
+Q829,Utah,item
+Q83065,Leicester,item
+Q83236,Chamonix-Mont-Blanc,item
+Q834337,Grass Valley,item
+Q835843,Varėna,item
+Q836,Myanmar,item
+Q837,Nepal,item
+Q83726,Ealing,item
+Q838579,Beaumont-en-Auge,item
+Q83958,Macedonia,item
+Q84,London,item
+Q84103,Magheralin,item
+Q841364,Ayutthaya Kingdom,item
+Q843,Pakistan,item
+Q844062,Kidderminster,item
+Q844930,Classical Athens,item
+Q846127,Stageira,item
+Q846939,Spanish Town,item
+Q849116,Kremenets,item
+Q8502,mountain,item
+Q852658,Bishop,item
+Q852772,Cirencester,item
+Q854,Sri Lanka,item
+Q858,Syria,item
+Q8614,Westphalia,item
+Q863,Tajikistan,item
+Q864166,Ise Province,item
+Q865,Taiwan,item
+Q8678,Rio de Janeiro,item
+Q8680,British Empire,item
+Q8686,Shanghai,item
+Q869,Thailand,item
+Q881708,Blantyre,item
+Q884,South Korea,item
+Q891,Nizhny Novgorod,item
+Q90,Paris,item
+Q9005,Brussels metropolitan area,item
+Q902,Bangladesh,item
+Q909146,Godalming,item
+Q910522,Pokój,item
+Q911909,Lyttelton,item
+Q917814,Stari Ras,item
+Q919,Krasnoyarsk,item
+Q925598,San Angelo,item
+Q92561,London,item
+Q926426,Kozan,item
+Q928,Philippines,item
+Q93180,Seleucid Empire,item
+Q932561,Elyria,item
+Q93358,Oradea,item
+Q934790,Greymouth,item
+Q943275,Mount Morris,item
+Q948,Tunisia,item
+Q948813,Great Bookham,item
+Q951302,Saaremaa,item
+Q952097,Muskegon,item
+Q953,Zambia,item
+Q953369,L'Islet,item
+Q953957,Wantage,item
+Q954569,Vyškov,item
+Q959,Vladivostok,item
+Q96,Mexico,item
+Q963140,Lyons,item
+Q9648,Falkland Islands,item
+Q965722,Laclede,item
+Q966777,Borge Municipality,item
+Q9679,Isle of Wight,item
+Q969032,Yorkshire,item
+Q974074,Whakatāne,item
+Q975782,Columbus,item
+Q976,Tomsk,item
+Q977991,Skegness,item
+Q982603,Caldwell,item
+Q986046,Alderley Edge,item
+Q986183,Delaware,item
+Q987262,Virginia City,item
+Q988588,Wyrzysk,item
+Q988739,Chillicothe,item
+Q989829,Osiecznica,item
+Q99,California,item
+Q990103,Haverfordwest,item
+Q990138,La Grange,item
+Q992,Amersfoort,item
+Q994988,Tipton,item
+Q997147,Orleans,item

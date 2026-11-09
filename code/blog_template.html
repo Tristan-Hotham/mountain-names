@@ -1,0 +1,112 @@
+<!-- wp:paragraph -->
+<p><em>Everest, Kosciuszko, Cook, McKinley: many of the world's mountains carry a person's name. I linked {{source.features|int}} of them to the places those people were born. In Australia and New Zealand four in five honour someone born on another continent, and only one in twenty of the people on the mountains is a woman.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/mountain-names/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24075305">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>The highest mountain on Earth is named after a man who never saw it. George Everest was the Surveyor General of India. His successor, Andrew Waugh, proposed his name for Peak XV in 1856, and the Royal Geographical Society adopted it in 1865, though the mountain already had a Tibetan name, Chomolungma. It is the most famous case of something that happened all over the world. Survey officers, explorers and colonial governors put the names of their bosses, patrons, monarchs and colleagues on mountains that the people living beneath them had been naming for a very long time.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>After mapping the people on the Moon, I wanted to ask the same question about Earth's own mountains. Wikidata, the open database behind Wikipedia, records what many mountains are named after and where most of those people were born. Joined up, that gives {{source.features|int}} mountains, summits, hills, volcanoes and ranges named after {{source.people|int}} people, {{source.people_located|int}} of them with a birthplace I could map. On the interactive page you can click any of them and follow the line home.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_world.png|World map on parchment with thousands of thin coloured lines arcing from mountains to birthplaces. Blue lines from Europe fan out to New Zealand, Australia, Antarctica, the Arctic and North America; red lines link North American peaks to American birthplaces; a dense knot of birthplaces covers western Europe|Every mountain named after a person, linked to that person's birthplace and coloured by continent of birth.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Named from the other side of the world</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In Europe the mountains are named after Europeans: {{cont.Europe.europe_pct|pc}} of the person-named peaks there honour someone born in Europe. Everywhere else the names were carried in. In Australia and New Zealand {{anz.other_pct|pc}} honour someone born on another continent, most of them in Europe; in South America {{cont.South America.other_pct|pc}}; in North America {{cont.North America.other_pct|pc}}. Of New Zealand's person-named peaks, {{country_n.New Zealand.foreign_pct|pc}} honour people born abroad, mostly in Britain. The longest lines run almost to the other side of the globe: Mount Grey in Canterbury honours George Grey, Governor of New Zealand, who was born in Lisbon, more than 19,000 km away.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_oceania.png|World map with lines from the mountains of Australia and New Zealand to birthplaces, almost all of them blue lines sweeping north-west to Britain, Ireland, Germany and France|Australia and New Zealand: the person-named peaks and where their namesakes were born.}}
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>Four in five of the person-named peaks of Australia and New Zealand honour someone born on another continent.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+{{IMG|b_continents.png|Stacked bars of continent of birth by continent of the mountain. Europe: {{cont.Europe.europe_pct|pc}} born in Europe. North America: about two thirds born in North America, a third in Europe. Oceania: {{cont.Oceania.europe_pct|pc}} born in Europe. South America: two thirds born in Europe. Asia: half Asia, half Europe|Where the honoured were born, by where the mountain is.}}
+
+<!-- wp:paragraph -->
+<p>The pattern holds even where the country is European. On Svalbard, the Arctic archipelago under Norwegian sovereignty since 1925, {{country_n.Svalbard (Norway).foreign_pct|pc}} of the person-named mountains honour people born outside Norway, many of them Swedish, German and British scientists from the expeditions that mapped it. Antarctica, where nobody is born, is the extreme case: every name comes from somewhere else, {{antarctica.europe_pct|pc}} of them from Europe.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_countries.png|Horizontal bar chart of the share of person-named mountains honouring someone born abroad: New Zealand {{country_n.New Zealand.foreign_pct|pc}}, Australia {{country_n.Australia.foreign_pct|pc}}, Svalbard {{country_n.Svalbard (Norway).foreign_pct|pc}}, Canada {{country_n.Canada.foreign_pct|pc}}, Russia {{country_n.Russia.foreign_pct|pc}}, United States {{country_n.United States.foreign_pct|pc}}|Honouring the foreign-born, by country.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Scientists, kings and surveyors</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wikidata often gives a person several occupations, so I put each person in one group, with titles of rule first, then specific professions, then politics, then everything else. By that count {{occ.science.pct|pc}} of the people on the mountains were scientists, {{occ.royal.pct|pc}} royals, rulers or politicians, {{occ.explore.pct|pc}} explorers, mountaineers or aviators, {{occ.military.pct|pc}} military or naval officers and {{occ.survey.pct|pc}} surveyors and geographers. Royals and politicians are still the largest group on the mountains of North America and of Australia and New Zealand. The surveyors were good at honouring one another. In the 1860s the California Geological Survey put its leader Josiah Whitney, its members William Brewer and Charles Hoffmann and the geologist James Dwight Dana on the peaks of the High Sierra. The most honoured person in the data is the botanist Ferdinand von Mueller, with {{top_people.0.n|int}} features, most of them in Australia and New Zealand.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_occupations.png|Stacked bars of the occupation groups of namesakes by continent. Royals, rulers and politicians are the largest group in North America and Oceania; scientists are a third of Antarctica's|What the honoured people did, by continent of the mountain.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The highest, and the women</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The tallest person-named mountains are Everest ({{tallest.0.elev|int}} m), Ismoil Somoni Peak ({{tallest.1.elev|int}} m), the highest point of Tajikistan, named after a Samanid ruler of the ninth century, and Lenin Peak ({{tallest.2.elev|int}} m). The Soviet Pamirs are full of revolutionaries and scientists, from Felix Dzerzhinsky to Leonhard Euler. Women are scarce everywhere: {{women.n|int}} of {{women.known|int}} namings ({{women.pct|f1}}%), many of them queens and princesses such as Victoria and Maud, but also the astronomer Beatrice Tinsley, the botanist Nancy Burbidge and the aviators Amelia Earhart and Jean Batten.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_tallest.png|Horizontal bars of the twelve highest person-named mountains, from Mount Everest ({{tallest.0.elev|int}} m, George Everest) through Ismoil Somoni Peak and Lenin Peak to Denali and Churchill Peaks|The highest mountains named after a person in Wikidata.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Names given back</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Some of these names are coming off the map. Wikidata's dated official names show Mount McKinley becoming Denali in 2015 (a presidential order made Mount McKinley the federal name again in 2025, though the State of Alaska, which adopted Denali in 1975, still uses it), Harney Peak becoming Black Elk Peak in 2016, Jeff Davis Peak becoming Doso Doyabi in 2019, Mount Evans becoming Mount Blue Sky in 2023 and Clingmans Dome becoming Kuwohi in 2024. In New Zealand and Australia the gentler route is the dual name, as with Aoraki / Mount Cook and Kunanyi / Mount Wellington. And in {{slur_year|raw}} the United States replaced a slur for Native American women in the names of nearly 650 places; Wikidata records {{slur_renamed|int}} of them that are hills, peaks or mountains.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The data are Wikidata's "named after" statements for every mountain, summit, hill, volcano and range named after a person, with each person's birthplace, dates, sex and occupations, queried through the QLever engine. I removed duplicate rows, mountain passes, features on the Moon and Mars, undersea ridges and a few features that are not mountains at all (two ravines and a road), placed every mountain and birthplace in its modern country and continent with Natural Earth, and grouped occupations by keyword. Distances are great circles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>There are caveats. Wikidata is not a full list of the world's mountains, and its coverage is dense in some places (the Sierra Nevada, Svalbard, New Zealand) and thin in others. I read every mountain whose name does not contain its namesake's name and removed {{source.links_removed|int}} wrong links, such as Galápagos islands linked to the English nobles of their old names, former names like Mount Stalin, and hills named after a saint through a church or chapel. I left {{source.bp_unmapped|int}} people off the map because Wikidata gives only a country, a state or an empire as their birthplace, and corrected {{source.bp_fixed|word}} (the chemist Lyon Playfair was born in India, not Haiti, and Mount Olga, now Kata Tjuta, honours Queen Olga of Württemberg, not the later Grand Duchess Olga born in 1895). Some elevations in Wikidata are in feet without saying so; I read values higher than a country's highest point as feet, and fixed a few more by hand. Modern borders are applied to old birthplaces.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/mountain-names/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24075305">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/mountain-names">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Wikidata contributors, Wikidata (CC0), queried with QLever (Bast and Buchhold, 2017). Vrandečić, D. and Krötzsch, M. (2014) Wikidata: a free collaborative knowledgebase. Communications of the ACM 57(10).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Natural Earth (public domain). Map style on OpenStreetMap data (ODbL) via OpenFreeMap.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

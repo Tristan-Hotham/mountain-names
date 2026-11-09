@@ -1,0 +1,133 @@
+pid,name,field,wikidata_value,corrected_value,blon,blat,note
+Q122553,Charles II of England,link,Q1048209,,,,"Floreana: Charles II honoured by the old English name Charles Island, not the current name"
+Q2841737,Mercedes Jijón,link,Q1048209,,,,Floreana: named after President Juan José Flores; link to his wife doubtful
+Q332623,"Samuel Hood, 1st Viscount Hood",link,Q1062516,,,,Española: Hood Island is the old English name
+Q6129740,"James Bertie, 1st Earl of Abingdon",link,Q1064098,,,,Pinta: Abingdon Island is the old English name
+Q64748647,Robert Byndloss,link,Q1147502,,,,Marchena: Bindloe Island is the old English name
+Q335334,"Adam Duncan, 1st Viscount Duncan",link,Q1195352,,,,Pinzón: Duncan Island is the old English name
+Q4161753,Anthony Deane,link,Q1195352,,,,Pinzón: Deane is an old English name
+Q126188,James II of England,link,Q408217,,,,Santiago: James Island (old English name) honoured James II
+Q302,Jesus Christ,link,Q408217,,,,"Santiago: named after Saint James, not Jesus"
+Q31966,Mark the Evangelist,link,Q408217,,,,"Santiago: named after Saint James, not Mark"
+Q335254,"John Jervis, 1st Earl of St Vincent",link,Q605355,,,,Rábida: Jervis Island is the old English name
+Q5896211,Hernán Merino,link,Q5788463,,,,Cordón Mariano Moreno: second link is to an unrelated person
+Q9960,Ronald Reagan,link,Q6920171,,,,Mount Clay: a state renaming to Mount Reagan is not the official federal name
+Q1377579,Konstantin von Kaufman,link,Q838587,,,,Lenin Peak: von Kaufman was the former name (Kaufmann Peak)
+Q8011,Avicenna,link,Q838587,,,,"Lenin Peak: Avicenna is the Tajik renaming (Abu Ali ibn Sino), not the name used here"
+Q855,Joseph Stalin,link,Q4285549,,,,Mount Peck: the former name Mount Stalin was dropped in 1987
+Q1394,Vladimir Lenin,link,Q592880,,,,Sparrow Hills: the Lenin Hills name was dropped in 1999
+Q207682,Sergei Kirov,link,Q25378979,,,,Pik Erkindik: former name Kirov Peak
+Q12967,Leopold II of Belgium,link,Q3576627,,,,Wunaamin-Miliwundi Ranges: renamed from King Leopold Ranges in 2020
+Q948618,Henry Haversham Godwin-Austen,link,Q43512,,,,K2 is not named after Godwin-Austen; Mount Godwin-Austen is a proposed alternative name
+Q61774,Franz Ernst Neumann,link,Q31681809,,,,"Naumann Range: Wikidata links Franz Neumann, a different person from Naumann"
+Q1700884,John Lort Stokes,link,Q21837448,,,,Cerro Mitre: link to John Lort Stokes doubtful
+Q3918525,Bozorgmehr Qaeni,link,Q26899568,,,,Mount Abuzar: link to Bozorgmehr is to a different person
+Q956592,Artemius,link,Q21697651,,,,Qoşqar Dağı: link to Saint Artemius doubtful
+Q7996,Ivan the Terrible,link,Q3156114,,,,Yakeyama: link to Ivan the Terrible doubtful
+Q7732,Louis XVI of France,link,Q31640323,,,,Le Caire: link to Louis XVI doubtful
+Q12004392,Sverre K. Seeberg,link,Q21477697,,,,Andersensåta: named after Sverre K. Andersen (SCAR gazetteer); link to Sverre Seeberg is wrong
+Q35041,William McKinley,name,Q130018,Denali (Mount McKinley),,,"label missing in the extract; officially Denali 2015 to 2025, Mount McKinley in US federal use since 2025"
+Q986397,Alleyne FitzHerbert,name,Q4675,Mount St. Helens,,,label missing in the extract
+Q8605,Simón Bolívar,name,Q338790,Pico Simón Bolívar,,,English label wrongly duplicates Pico Cristóbal Colón
+Q105243678,Manfred Hochstein,birthplace_unknown,,,,,Wikidata birthplace is only a country: Germany
+Q11248587,Donal T. Manahan,birthplace_unknown,,,,,Wikidata birthplace is only a country: Ireland
+Q119858520,Anna Mills Johnston,birthplace_unknown,,,,,Wikidata birthplace is only a country: Canada
+Q136464805,Joachim Henry Senger,birthplace_unknown,,,,,Wikidata birthplace is only a country: Germany
+Q136565265,Lewis Foerster,birthplace_unknown,,,,,Wikidata birthplace is only a country: Germany
+Q136616016,John Baxter,birthplace_unknown,,,,,Wikidata birthplace is only a country: Canada
+Q136908435,Pierre Joseph Giraud,birthplace_unknown,,,,,Wikidata birthplace is only a country: France
+Q242436,Mindaugas,birthplace_unknown,,,,,Wikidata birthplace is only a country: Lithuania
+Q25240299,Rosemary Askin,birthplace_unknown,,,,,Wikidata birthplace is only a country: New Zealand
+Q2897422,Jose ben Zimra,birthplace_unknown,,,,,Wikidata birthplace is only a country: Israel
+Q331755,Sverre of Norway,birthplace_unknown,,,,,Wikidata birthplace is only a country: Norway
+Q352985,Gunnbjörn Ulfsson,birthplace_unknown,,,,,Wikidata birthplace is only a country: Norway
+Q452506,Sten Sture the Elder,birthplace_unknown,,,,,Wikidata birthplace is only a country: Sweden
+Q4967281,Caroline Mikkelsen,birthplace_unknown,,,,,Wikidata birthplace is only a country: Denmark
+Q5083297,"Charles Wakefield, 1st Viscount Wakefield",birthplace_unknown,,,,,Wikidata birthplace is only a country: United Kingdom
+Q5491168,Louis Rolland-Germain,birthplace_unknown,,,,,Wikidata birthplace is only a country: France
+Q6790107,Matthew Baillie Begbie,birthplace_unknown,,,,,Wikidata birthplace is only a country: Mauritius
+Q89114,Conrad Kain,birthplace_unknown,,,,,Wikidata birthplace is only a country: Austria–Hungary
+Q968971,Vasily Chichagov,birthplace_unknown,,,,,Wikidata birthplace is only a country: Russian Empire
+Q104836433,Richard Blank,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): New York"
+Q105716682,John Ballard,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Kentucky"
+Q110887302,James Richardson,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): nan"
+Q120260330,Genevra Evo Magee,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): California"
+Q123474689,Gustave Marsh,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q134311204,Moses Job,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Pennsylvania"
+Q136460281,William Burchell Hooper,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Virginia"
+Q136661836,George Washington Cahoon,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Missouri"
+Q136779232,Arthur R. Ehrnbeck,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Wisconsin"
+Q137785666,Lucinda Davis,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Pennsylvania"
+Q137830413,Benjamin Stuart Templeton,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Ohio"
+Q137851649,Rush Spencer Wells,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): New Mexico"
+Q1452799,Frederick Bedford,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q1641374,James Munro,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q1817196,Len Beadell,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): New South Wales"
+Q2072231,Jambyl Jabayev,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Almaty Region"
+Q244407,Paul Kruger,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Cape Colony"
+Q3161244,James Mason Hutchings,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q320348,Widukind,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Westphalia"
+Q335143,"Constantine Phipps, 2nd Baron Mulgrave",birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q335165,Osceola,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Georgia"
+Q4226752,Matvey Kozlov,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): nan"
+Q4393299,Peter Rainier,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q4669390,Abram Wood,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Iowa"
+Q4885774,Ben Hall,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): New South Wales"
+Q526048,Richard Leach Maddox,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q5722621,Henry Harper,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q5981449,Louis-Marie Lalonde,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Quebec"
+Q6180919,Jeremiah N. Reynolds,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Pennsylvania"
+Q66689172,Benjamin D. Stewart,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Montana"
+Q7782302,Theophilus Heale,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q79899241,Edward Percy Sealy,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q94415393,Morrison Parsons Bridgland,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): Ontario"
+Q978054,Thomas Potts,birthplace_unknown,,,,,"Wikidata birthplace is only a state, province or country centre (round coordinates): England"
+Q154934,Ecgberht,birthplace_unknown,,,,,Wikidata birthplace is only a kingdom or empire: Kingdom of Wessex
+Q158504,Clement of Ohrid,birthplace_unknown,,,,,Wikidata birthplace is only a kingdom or empire: Byzantine Empire
+Q170017,Æthelstan,birthplace_unknown,,,,,Wikidata birthplace is only a kingdom or empire: Kingdom of Wessex
+Q191767,Edred of England,birthplace_unknown,,,,,Wikidata birthplace is only a kingdom or empire: Kingdom of Wessex
+Q223239,Abaqa Khan,birthplace_unknown,,,,,Wikidata birthplace is only a kingdom or empire: Mongol Empire
+Q272233,Æthelred I,birthplace_unknown,,,,,Wikidata birthplace is only a kingdom or empire: Kingdom of Wessex
+Q333737,"Lyon Playfair, 1st Baron Playfair",birthplace,,"Chunar, India",82.88,25.13,"Wikidata gives Haiti (a country); he was born at Chunar, Bengal Presidency"
+Q9439,Victoria,label,,Queen Victoria,,,"label in the extract is only ""Victoria"""
+Q5721,Philippe Pétain,link,Q6923098,,,,Mount Pétain: name rescinded in British Columbia in 2022 (Alberta earlier); the peak is now unnamed
+Q167477,Anthony of Padua,link,Q104425408,,,,"Outeiro de Santo Antônio da Barra: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q183332,Saint Sebastian,link,Q107400255,,,,"Mont Saint-Sébastien: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q302,Jesus Christ,link,Q117312837,,,,"hill in the Czech Republic: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q48438,Saint George,link,Q125489436,,,,"Georgiberg: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q33923,Saint Peter,link,Q1517833,,,,"Ai-Petri: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q44269,Saint Nicholas,link,Q16897259,,,,"St. Nikolausfjellet: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q149727,Saint Giles,link,Q17300930,,,,"Turó de Sant Gili: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q212850,Vitus,link,Q1748837,,,,"Vidova gora: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q235863,Genevieve of Paris,link,Q1945520,,,,"Montagne Sainte-Geneviève: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q2472762,Saint Piran,link,Q210168,,,,"Mount St. Piran: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q152457,Saint Roch,link,Q2160312,,,,"Rochusberg: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q164294,Saint Anne,link,Q21854976,,,,"Annaberg: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q80979,Brigid of Kildare,link,Q22554511,,,,"Mount St. Bride: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q2625307,Job in Islam,link,Q26899094,,,,"Mount Ayyub: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q504518,Cuthbert,link,Q30506669,,,,"Mount Saint Cuthbert: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q9441,The Buddha,link,Q31690309,,,,"Mount Shaka: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q310987,Simeon Stylites,link,Q3274184,,,,"Mount Simeon: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q189700,Zenobius of Florence,link,Q3950696,,,,"Sasso di San Zanobi: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q151967,Blaise of Sebaste,link,Q6409414,,,,"Cerro de San Blas: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q187172,Bodhidharma,link,Q11641900,,,,"Mount Daruma: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+Q877831,Maya,link,Q6922072,,,,"Mount Maya: named after a saint or religious figure by dedication (a church, chapel, monastery or shrine), not in memory of a person: legendary birthplace (review)"
+,,drop,Q1069352,,,,"Chemin des Révoires: a road in Monaco, not a mountain (review)"
+,,drop,Q5945453,,,,"Huntington Ravine: a ravine, not a mountain (review)"
+,,drop,Q7851107,,,,"Tuckerman Ravine: a ravine, not a mountain (review)"
+,,elev_feet,Q6922609,,,,"Mount Osceola, New Hampshire: 4315 is in feet (1315 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q31714088,,,,"Henry Flipper Hill, Texas: 4196 is in feet (1279 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q18625795,,,,"McCauley Mountain, Pennsylvania: 1571 is in feet (479 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q6920421,,,,"Mount Desor, Michigan: 1394 is in feet (425 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q3322152,,,,"Mount Tom, Massachusetts: 1202 is in feet (366 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q31707106,,,,"Bill Pickett Hill, Texas: 1260 is in feet (384 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q3321801,,,,"Mount Davidson, San Francisco: 928 is in feet (283 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q3322124,,,,"Mount Sutro, San Francisco: 912 is in feet (278 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q6923639,,,,"Mount Si, Washington: 4167 is in feet (1270 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q3321921,,,,"Mount Lee, Los Angeles: 1708 is in feet (521 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev_feet,Q15257999,,,,"Juan de Bolas Mountain, Jamaica: 2743 is in feet (836 m); the value is higher than the state or island highest point, or is the known height in feet (review)"
+,,elev,Q688645,1746,,,"Mount Rogers, Virginia: Wikidata 1825 m exceeds the state high point, which is Mount Rogers itself (1,746 m) (review)"
+Q113584,Grand Duchess Olga Nikolaevna of Russia,label,,"Olga Nikolaevna, Queen of Württemberg",,,"Kata Tjuta / Mount Olga: Ernest Giles named it in 1872 after Queen Olga of Württemberg (born 1822), not the Grand Duchess Olga born 1895 (review)"
+Q113584,Grand Duchess Olga Nikolaevna of Russia,birthplace,,Saint Petersburg,30.316,59.939,Queen Olga of Württemberg was born in Saint Petersburg (review)
+Q113584,Grand Duchess Olga Nikolaevna of Russia,born,,1822,,,"Queen Olga of Württemberg, born 1822 (review)"
+Q7186,Marie Curie,label,,Marie Curie,,,label missing in the extract (review)

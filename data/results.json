@@ -1,0 +1,864 @@
+{
+ "meta": {
+  "page": "https://maps.tristanhotham.com/mountain-names/",
+  "repo": "https://github.com/Tristan-Hotham/mountain-names"
+ },
+ "source": {
+  "rows": 11175,
+  "features": 2228,
+  "namings": 2241,
+  "people": 2010,
+  "people_located": 1635,
+  "located_namings": 1852,
+  "passes": 81,
+  "off_earth": 16,
+  "undersea": 6,
+  "not_mountains": 3,
+  "links_removed": 49,
+  "bp_unmapped": 59,
+  "bp_fixed": 2,
+  "names_fixed": 3,
+  "multi": 13,
+  "elev_known": 1425,
+  "elev_feet": 112,
+  "elev_bad": 0,
+  "antarctic": 769,
+  "antarctic_pct": 34.52,
+  "countries": 69
+ },
+ "peak_cont": {
+  "Europe": 478,
+  "North America": 537,
+  "Asia": 60,
+  "South America": 46,
+  "Africa": 3,
+  "Oceania": 322,
+  "Antarctica": 769,
+  "Ocean islands": 13
+ },
+ "peak_countries": [
+  {
+   "country": "United States",
+   "n": 348
+  },
+  {
+   "country": "Svalbard (Norway)",
+   "n": 306
+  },
+  {
+   "country": "New Zealand",
+   "n": 176
+  },
+  {
+   "country": "Canada",
+   "n": 166
+  },
+  {
+   "country": "Australia",
+   "n": 136
+  },
+  {
+   "country": "Russia",
+   "n": 32
+  },
+  {
+   "country": "France",
+   "n": 29
+  },
+  {
+   "country": "Norway",
+   "n": 26
+  },
+  {
+   "country": "Austria",
+   "n": 21
+  },
+  {
+   "country": "Greenland",
+   "n": 19
+  },
+  {
+   "country": "Italy",
+   "n": 18
+  },
+  {
+   "country": "Argentina",
+   "n": 15
+  }
+ ],
+ "cont": {
+  "Europe": {
+   "n": 430,
+   "other_pct": 2.09,
+   "europe_pct": 97.91,
+   "same_country_pct": 17.21,
+   "top_bcont": "Europe",
+   "bcont": {
+    "Europe": 421,
+    "North America": 4,
+    "Oceania": 2,
+    "Asia": 2,
+    "Africa": 1
+   }
+  },
+  "North America": {
+   "n": 430,
+   "other_pct": 35.12,
+   "europe_pct": 34.19,
+   "same_country_pct": 59.77,
+   "top_bcont": "North America",
+   "bcont": {
+    "North America": 279,
+    "Europe": 147,
+    "Asia": 3,
+    "South America": 1
+   }
+  },
+  "Oceania": {
+   "n": 274,
+   "other_pct": 84.31,
+   "europe_pct": 79.56,
+   "same_country_pct": 13.5,
+   "top_bcont": "Europe",
+   "bcont": {
+    "Europe": 218,
+    "Oceania": 43,
+    "North America": 8,
+    "Asia": 5
+   }
+  },
+  "Asia": {
+   "n": 44,
+   "other_pct": 52.27,
+   "europe_pct": 52.27,
+   "same_country_pct": 40.91,
+   "top_bcont": "Europe",
+   "bcont": {
+    "Europe": 23,
+    "Asia": 21
+   }
+  },
+  "South America": {
+   "n": 41,
+   "other_pct": 70.73,
+   "europe_pct": 65.85,
+   "same_country_pct": 14.63,
+   "top_bcont": "Europe",
+   "bcont": {
+    "Europe": 27,
+    "South America": 12,
+    "Asia": 2
+   }
+  },
+  "Africa": {
+   "n": 1,
+   "other_pct": 100.0,
+   "europe_pct": 100.0,
+   "same_country_pct": 0.0,
+   "top_bcont": "Europe",
+   "bcont": {
+    "Europe": 1
+   }
+  },
+  "Ocean islands": {
+   "n": 11,
+   "other_pct": 100.0,
+   "europe_pct": 90.91,
+   "same_country_pct": 0.0,
+   "top_bcont": "Europe",
+   "bcont": {
+    "Europe": 10,
+    "South America": 1
+   }
+  }
+ },
+ "anz": {
+  "n": 265,
+  "other_pct": 83.77,
+  "europe_pct": 78.87,
+  "oceania_n": 274
+ },
+ "outside": {
+  "n": 1231,
+  "other_pct": 36.96,
+  "europe_born_pct": 68.81,
+  "same_country_pct": 31.84,
+  "noneurope_peaks_europe_born_pct": 53.18,
+  "noneurope_n": 801
+ },
+ "antarctica": {
+  "n": 621,
+  "europe_pct": 73.27,
+  "na_pct": 16.26
+ },
+ "all_europe_born_pct": 70.3,
+ "countries": [
+  {
+   "country": "Svalbard (Norway)",
+   "n": 278,
+   "foreign_pct": 73.02,
+   "top_born": "Norway",
+   "top_foreign": [
+    "Sweden",
+    "Germany",
+    "United Kingdom"
+   ]
+  },
+  {
+   "country": "United States",
+   "n": 269,
+   "foreign_pct": 29.0,
+   "top_born": "United States",
+   "top_foreign": [
+    "United Kingdom",
+    "Germany",
+    "France"
+   ]
+  },
+  {
+   "country": "New Zealand",
+   "n": 160,
+   "foreign_pct": 87.5,
+   "top_born": "United Kingdom",
+   "top_foreign": [
+    "United Kingdom",
+    "Germany",
+    "France"
+   ]
+  },
+  {
+   "country": "Canada",
+   "n": 141,
+   "foreign_pct": 54.61,
+   "top_born": "Canada",
+   "top_foreign": [
+    "United Kingdom",
+    "France",
+    "United States"
+   ]
+  },
+  {
+   "country": "Australia",
+   "n": 105,
+   "foreign_pct": 83.81,
+   "top_born": "United Kingdom",
+   "top_foreign": [
+    "United Kingdom",
+    "Germany",
+    "Ireland"
+   ]
+  },
+  {
+   "country": "Russia",
+   "n": 30,
+   "foreign_pct": 46.67,
+   "top_born": "Russia",
+   "top_foreign": [
+    "Belarus",
+    "Ukraine",
+    "France"
+   ]
+  }
+ ],
+ "country_n": {
+  "Australia": {
+   "country": "Australia",
+   "n": 105,
+   "foreign_pct": 83.81,
+   "top_born": "United Kingdom",
+   "top_foreign": [
+    "United Kingdom",
+    "Germany",
+    "Ireland"
+   ]
+  },
+  "Canada": {
+   "country": "Canada",
+   "n": 141,
+   "foreign_pct": 54.61,
+   "top_born": "Canada",
+   "top_foreign": [
+    "United Kingdom",
+    "France",
+    "United States"
+   ]
+  },
+  "New Zealand": {
+   "country": "New Zealand",
+   "n": 160,
+   "foreign_pct": 87.5,
+   "top_born": "United Kingdom",
+   "top_foreign": [
+    "United Kingdom",
+    "Germany",
+    "France"
+   ]
+  },
+  "Russia": {
+   "country": "Russia",
+   "n": 30,
+   "foreign_pct": 46.67,
+   "top_born": "Russia",
+   "top_foreign": [
+    "Belarus",
+    "Ukraine",
+    "France"
+   ]
+  },
+  "Svalbard (Norway)": {
+   "country": "Svalbard (Norway)",
+   "n": 278,
+   "foreign_pct": 73.02,
+   "top_born": "Norway",
+   "top_foreign": [
+    "Sweden",
+    "Germany",
+    "United Kingdom"
+   ]
+  },
+  "United States": {
+   "country": "United States",
+   "n": 269,
+   "foreign_pct": 29.0,
+   "top_born": "United States",
+   "top_foreign": [
+    "United Kingdom",
+    "Germany",
+    "France"
+   ]
+  }
+ },
+ "occ": {
+  "royal": {
+   "n": 396,
+   "pct": 19.21,
+   "name": "Royalty, rulers and politicians"
+  },
+  "military": {
+   "n": 244,
+   "pct": 11.84,
+   "name": "Military and naval officers"
+  },
+  "survey": {
+   "n": 225,
+   "pct": 10.92,
+   "name": "Surveyors, geographers and cartographers"
+  },
+  "explore": {
+   "n": 356,
+   "pct": 17.27,
+   "name": "Explorers, mountaineers and aviators"
+  },
+  "science": {
+   "n": 605,
+   "pct": 29.35,
+   "name": "Scientists"
+  },
+  "arts": {
+   "n": 112,
+   "pct": 5.43,
+   "name": "Writers, artists and composers"
+  },
+  "religion": {
+   "n": 30,
+   "pct": 1.46,
+   "name": "Saints and clergy"
+  },
+  "business": {
+   "n": 56,
+   "pct": 2.72,
+   "name": "Business people and patrons"
+  },
+  "other": {
+   "n": 37,
+   "pct": 1.8,
+   "name": "Others"
+  }
+ },
+ "occ_unknown": 180,
+ "occ_names": {
+  "royal": "Royalty, rulers and politicians",
+  "military": "Military and naval officers",
+  "survey": "Surveyors, geographers and cartographers",
+  "explore": "Explorers, mountaineers and aviators",
+  "science": "Scientists",
+  "arts": "Writers, artists and composers",
+  "religion": "Saints and clergy",
+  "business": "Business people and patrons",
+  "other": "Others"
+ },
+ "occ_cols": {
+  "royal": "#7B57A8",
+  "military": "#2F5FA7",
+  "survey": "#2E9A8C",
+  "explore": "#C8322B",
+  "science": "#E0A11B",
+  "arts": "#9C7BC0",
+  "religion": "#B4532A",
+  "business": "#55803A",
+  "other": "#9C9284",
+  "unknown": "#C9C0B0"
+ },
+ "occ_by_cont": {
+  "Europe": {
+   "royal": 61,
+   "military": 42,
+   "survey": 65,
+   "explore": 75,
+   "science": 159,
+   "arts": 15,
+   "religion": 11,
+   "business": 12,
+   "other": 5
+  },
+  "North America": {
+   "royal": 122,
+   "military": 66,
+   "survey": 34,
+   "explore": 76,
+   "science": 110,
+   "arts": 22,
+   "religion": 4,
+   "business": 16,
+   "other": 12
+  },
+  "Oceania": {
+   "royal": 83,
+   "military": 36,
+   "survey": 38,
+   "explore": 58,
+   "science": 67,
+   "arts": 13,
+   "religion": 3,
+   "business": 8,
+   "other": 5
+  },
+  "Asia": {
+   "royal": 14,
+   "military": 11,
+   "survey": 8,
+   "explore": 4,
+   "science": 3,
+   "arts": 9,
+   "religion": 3,
+   "business": 0,
+   "other": 2
+  },
+  "South America": {
+   "royal": 8,
+   "military": 6,
+   "survey": 4,
+   "explore": 13,
+   "science": 7,
+   "arts": 0,
+   "religion": 3,
+   "business": 1,
+   "other": 0
+  },
+  "Antarctica": {
+   "royal": 104,
+   "military": 82,
+   "survey": 75,
+   "explore": 124,
+   "science": 258,
+   "arts": 52,
+   "religion": 6,
+   "business": 19,
+   "other": 13
+  }
+ },
+ "women": {
+  "n": 113,
+  "known": 2224,
+  "pct": 5.08,
+  "people": 106,
+  "royal": 34,
+  "royal_pct": 30.09,
+  "men_royal_pct": 17.1,
+  "by_cont": {
+   "Europe": {
+    "n": 19,
+    "pct": 3.97
+   },
+   "North America": {
+    "n": 30,
+    "pct": 5.66
+   },
+   "Oceania": {
+    "n": 21,
+    "pct": 6.48
+   },
+   "Antarctica": {
+    "n": 36,
+    "pct": 4.69
+   }
+  },
+  "after1900_pct": 11.47,
+  "before1900_pct": 3.92
+ },
+ "tallest": [
+  {
+   "name": "Mount Everest",
+   "elev": 8849,
+   "person": "George Everest",
+   "country": "Nepal and China",
+   "born": "United Kingdom",
+   "feet": false
+  },
+  {
+   "name": "Ismoil Somoni Peak",
+   "elev": 7495,
+   "person": "Ismail Samani",
+   "country": "Tajikistan",
+   "born": "Uzbekistan",
+   "feet": false
+  },
+  {
+   "name": "Lenin Peak",
+   "elev": 7134,
+   "person": "Vladimir Lenin",
+   "country": "Tajikistan",
+   "born": "Russia",
+   "feet": false
+  },
+  {
+   "name": "Dzerzhinsky Peak",
+   "elev": 6717,
+   "person": "Felix Dzerzhinsky",
+   "country": "Tajikistan",
+   "born": "Belarus",
+   "feet": false
+  },
+  {
+   "name": "Tipas",
+   "elev": 6658,
+   "person": "Walther Penck",
+   "country": "Argentina",
+   "born": "Austria",
+   "feet": false
+  },
+  {
+   "name": "Parrota",
+   "elev": 6277,
+   "person": "Friedrich Parrot",
+   "country": "Tajikistan",
+   "born": "Germany",
+   "feet": false
+  },
+  {
+   "name": "Przhevalsky peak",
+   "elev": 6276,
+   "person": "Nikolay Przhevalsky",
+   "country": "China",
+   "born": "",
+   "feet": false
+  },
+  {
+   "name": "Cerro General Belgrano",
+   "elev": 6250,
+   "person": "Manuel Belgrano",
+   "country": "Argentina",
+   "born": "Argentina",
+   "feet": false
+  },
+  {
+   "name": "Denali (Mount McKinley)",
+   "elev": 6190,
+   "person": "William McKinley",
+   "country": "United States",
+   "born": "United States",
+   "feet": false
+  },
+  {
+   "name": "Churchill Peaks",
+   "elev": 6167,
+   "person": "Winston Churchill",
+   "country": "United States",
+   "born": "United Kingdom",
+   "feet": true
+  },
+  {
+   "name": "Euler Peak",
+   "elev": 6022,
+   "person": "Leonhard Euler",
+   "country": "Kyrgyzstan",
+   "born": "Switzerland",
+   "feet": false
+  },
+  {
+   "name": "Schlagintweit Peak",
+   "elev": 5971,
+   "person": "Adolf von Schlagintweit",
+   "country": "Pakistan",
+   "born": "Germany",
+   "feet": false
+  },
+  {
+   "name": "Mount Logan",
+   "elev": 5959,
+   "person": "William Edmond Logan",
+   "country": "Canada",
+   "born": "Canada",
+   "feet": false
+  },
+  {
+   "name": "Semyonov peak",
+   "elev": 5816,
+   "person": "Pyotr Semyonov-Tyan-Shansky",
+   "country": "Kazakhstan",
+   "born": "Russia",
+   "feet": false
+  },
+  {
+   "name": "Pico Simón Bolívar",
+   "elev": 5775,
+   "person": "Simón Bolívar",
+   "country": "Colombia",
+   "born": "Venezuela",
+   "feet": false
+  }
+ ],
+ "dist": {
+  "median_km": 7641,
+  "median_outside_km": 3289,
+  "over5000_pct": 36.39,
+  "longest": [
+   {
+    "name": "Mount Grey / Maukatere",
+    "person": "George Grey",
+    "km": 19505,
+    "country": "New Zealand",
+    "bctry": "Portugal"
+   },
+   {
+    "name": "Mount Davy",
+    "person": "Humphry Davy",
+    "km": 19122,
+    "country": "New Zealand",
+    "bctry": "United Kingdom"
+   },
+   {
+    "name": "Mount Sydney Dacres",
+    "person": "Sydney Dacres",
+    "km": 19120,
+    "country": "New Zealand",
+    "bctry": "United Kingdom"
+   },
+   {
+    "name": "Whitcombe Peak",
+    "person": "Henry Whitcombe",
+    "km": 19104,
+    "country": "New Zealand",
+    "bctry": "United Kingdom"
+   },
+   {
+    "name": "Mount Lort",
+    "person": "John Lort Stokes",
+    "km": 19097,
+    "country": "New Zealand",
+    "bctry": "United Kingdom"
+   }
+  ]
+ },
+ "born_median": 1853,
+ "born_19c_pct": 65.72,
+ "cent": {
+  "15": 13,
+  "16": 36,
+  "17": 32,
+  "18": 254,
+  "19": 1417,
+  "20": 342
+ },
+ "top_people": [
+  {
+   "name": "Ferdinand von Mueller",
+   "n": 6
+  },
+  {
+   "name": "Jan Czerski",
+   "n": 5
+  },
+  {
+   "name": "Prince Albert of Saxe-Coburg and Gotha",
+   "n": 5
+  },
+  {
+   "name": "Queen Victoria",
+   "n": 4
+  },
+  {
+   "name": "Julius von Haast",
+   "n": 4
+  },
+  {
+   "name": "Alexander Karpinsky",
+   "n": 4
+  },
+  {
+   "name": "Alexander von Humboldt",
+   "n": 4
+  },
+  {
+   "name": "Fridtjof Nansen",
+   "n": 4
+  },
+  {
+   "name": "Ernest Shackleton",
+   "n": 4
+  },
+  {
+   "name": "John Tyndall",
+   "n": 4
+  },
+  {
+   "name": "James Dwight Dana",
+   "n": 4
+  },
+  {
+   "name": "Charles Swithinbank",
+   "n": 3
+  }
+ ],
+ "dual": [
+  "Ōrongomai / Cass Peak",
+  "Takarunga / Mount Victoria",
+  "Ōwairaka / Mount Albert",
+  "Kunanyi / Mount Wellington",
+  "Kata Tjuta / Mount Olga",
+  "Mount MacKenzie / Pakihiwitahi",
+  "Aoraki / Mount Cook",
+  "Mount Grey / Maukatere",
+  "Mount Herbert / Te Ahu Pātiki"
+ ],
+ "renamed": [
+  {
+   "name": "Denali",
+   "country": "United States",
+   "old_name": "Mount McKinley",
+   "old_person": "William McKinley",
+   "new_name": "Denali (2015); Mount McKinley again in US federal use from 2025",
+   "year": 2015.0,
+   "direction": "away from a person",
+   "source": "Wikidata official names (P1448) with start and end dates"
+  },
+  {
+   "name": "Black Elk Peak",
+   "country": "United States",
+   "old_name": "Harney Peak",
+   "old_person": "William S. Harney",
+   "new_name": "Black Elk Peak (after the Lakota holy man Black Elk)",
+   "year": 2016.0,
+   "direction": "away from a person",
+   "source": "Wikidata official names (P1448)"
+  },
+  {
+   "name": "Mount Blue Sky",
+   "country": "United States",
+   "old_name": "Mount Evans",
+   "old_person": "John Evans",
+   "new_name": "Mount Blue Sky",
+   "year": 2023.0,
+   "direction": "away from a person",
+   "source": "Wikidata official names (P1448)"
+  },
+  {
+   "name": "Doso Doyabi",
+   "country": "United States",
+   "old_name": "Jeff Davis Peak",
+   "old_person": "Jefferson Davis",
+   "new_name": "Doso Doyabi",
+   "year": 2019.0,
+   "direction": "away from a person",
+   "source": "Wikidata official names (P1448)"
+  },
+  {
+   "name": "Kuwohi",
+   "country": "United States",
+   "old_name": "Clingmans Dome",
+   "old_person": "Thomas Lanier Clingman",
+   "new_name": "Kuwohi",
+   "year": 2024.0,
+   "direction": "away from a person",
+   "source": "Wikidata official names (P1448)"
+  },
+  {
+   "name": "Unnamed peak (formerly Mount Pétain)",
+   "country": "Canada",
+   "old_name": "Mount Pétain",
+   "old_person": "Philippe Pétain",
+   "new_name": "name rescinded; the peak is unnamed",
+   "year": 2022.0,
+   "direction": "away from a person",
+   "source": "Wikidata official names (P1448); British Columbia geographical names (2022)"
+  },
+  {
+   "name": "Wunaamin-Miliwundi Ranges",
+   "country": "Australia",
+   "old_name": "King Leopold Ranges",
+   "old_person": "Leopold II of Belgium",
+   "new_name": "Wunaamin-Miliwundi Ranges",
+   "year": 2020.0,
+   "direction": "away from a person",
+   "source": "Wikidata named after (P138) still linking the former name"
+  },
+  {
+   "name": "Mount Peck",
+   "country": "Canada",
+   "old_name": "Mount Stalin",
+   "old_person": "Joseph Stalin",
+   "new_name": "Mount Peck",
+   "year": 1987.0,
+   "direction": "away from a person",
+   "source": "Wikidata named after (P138) still linking the former name; renamed 1987"
+  },
+  {
+   "name": "Sparrow Hills",
+   "country": "Russia",
+   "old_name": "Lenin Hills",
+   "old_person": "Vladimir Lenin",
+   "new_name": "Sparrow Hills",
+   "year": null,
+   "direction": "away from a person",
+   "source": "Wikidata named after (P138) still linking the former name"
+  },
+  {
+   "name": "Lenin Peak",
+   "country": "Kyrgyzstan and Tajikistan",
+   "old_name": "Kaufmann Peak",
+   "old_person": "Konstantin von Kaufman",
+   "new_name": "Lenin Peak (in Tajikistan also Abu Ali ibn Sino Peak)",
+   "year": null,
+   "direction": "between people",
+   "source": "Wikidata named after (P138)"
+  },
+  {
+   "name": "Dzyarzhynskaya Hara",
+   "country": "Belarus",
+   "old_name": "Skirmantava",
+   "old_person": null,
+   "new_name": "Dzyarzhynskaya Hara (after Felix Dzerzhinsky)",
+   "year": 1958.0,
+   "direction": "to a person",
+   "source": "Wikidata official names (P1448)"
+  },
+  {
+   "name": "Pik Bilibina",
+   "country": "Russia",
+   "old_name": "Snezhnaya",
+   "old_person": null,
+   "new_name": "Pik Bilibina (after Yuri Bilibin)",
+   "year": 2003.0,
+   "direction": "to a person",
+   "source": "Wikidata official names (P1448)"
+  }
+ ],
+ "renamed_away": 9,
+ "renamed_to": 2,
+ "slur_renamed": 96,
+ "slur_year": "2022",
+ "checks": {
+  "links_removed": 49,
+  "bp_unmapped": 59
+ }
+}
