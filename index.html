@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Who's on the mountains?</title>
+<meta name="description" content="Whose names are on the world's mountains? 2,228 peaks, ranges and hills named after people in Wikidata, each linked to its namesake's birthplace: 84% of Oceania's honour someone born on another continent.">
+<meta property="og:title" content="Who's on the mountains? The birthplaces of the people the world's peaks are named after">
+<meta property="og:description" content="84% of the peaks of Australia and New Zealand named after a person honour someone born on another continent. Only 5.1% honour a woman. Click a peak to draw the line to its namesake's birthplace.">
+<meta property="og:image" content="https://maps.tristanhotham.com/mountain-names/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/mountain-names/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=MedievalSharp&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+/* Parchment, ink and the colours of the continents. */
+:root{
+  --bg:#F6EED8; --panel:#EFE3C4; --fg:#2B2119; --muted:#6E604E; --rule:#E2D3AE; --card:#FBF5E4; --border:#D3C29A;
+  --hot:#A3261B; --cool:#3D6E9E;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --hand:"MedievalSharp","Fraunces",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1A1612; --panel:#241E18; --fg:#EFE6D4; --muted:#ADA08B; --rule:#3A3128; --card:#211B15; --border:#4D4234; --hot:#E07A6C; --cool:#8FB4DA; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A1612; --panel:#241E18; --fg:#EFE6D4; --muted:#ADA08B; --rule:#3A3128; --card:#211B15; --border:#4D4234; --hot:#E07A6C; --cool:#8FB4DA; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1240px,calc(100vw - 32px));margin-left:calc((100% - min(1240px,100vw - 32px))/2)}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:#A3261B;color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(44px,10vw,92px)/.92 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot);font-family:var(--hand);font-weight:400;letter-spacing:.01em}
+.mark{width:clamp(78px,16vw,130px);height:auto;display:block;color:var(--fg)}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:58ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+p{margin:0 0 16px}
+.lede::first-letter{font:400 76px/.8 var(--hand);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em;color:var(--hot)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}.lab.w{fill:#fff}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:300px;z-index:3000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.controls{display:flex;gap:8px 16px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1px solid rgba(0,0,0,.25)}
+.btn:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.srch{position:relative;flex:1 1 240px;max-width:360px}
+.srch input{width:100%;font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:9px 10px;min-height:40px}
+.sug{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);max-height:320px;overflow:auto;display:none;box-shadow:0 3px 10px rgba(60,40,10,.2);z-index:1200;font:400 13px/1.35 var(--mono)}
+.sug li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.sug li span{color:var(--muted);font-size:12px}
+.sug li[aria-selected="true"],.sug li:hover{background:var(--panel)}
+.maptitle{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;display:flex;justify-content:space-between;gap:8px}
+.lmap{height:680px;border:1px solid #BCA676;background:#F3E5BF;border-radius:2px;position:relative;overflow:hidden}
+@media (max-width:900px){.lmap{height:min(70vh,560px)}}
+.maplibregl-map{font:400 12px/1.4 var(--mono)}
+.lyrCtl{margin:10px 0 0 10px}
+.lyrBtn{background:#FBF5E4;color:#2B2119;border:1px solid #9C8656;border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(60,40,10,.18)}
+.lyrBtn[aria-expanded="true"]{background:#2B2119;color:#F6EED8}
+.lyrPanel{background:rgba(251,245,228,.98);color:#2B2119;border:1px solid #9C8656;border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(60,40,10,.25);font:400 12px/1.3 var(--mono);max-height:min(56vh,430px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel h5{margin:8px 0 2px;padding-top:6px;border-top:1px solid #E2D3AE;font:600 10.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#A3261B}
+.lyrPanel h5:first-child{border-top:0;padding-top:0;margin-top:0}
+.lyrPanel label{display:flex;gap:7px;align-items:center;cursor:pointer;padding:3px 0;min-height:28px}
+.lyrPanel input{accent-color:#A3261B;width:15px;height:15px;flex:none}
+.mapnote{position:absolute;left:10px;bottom:10px;z-index:3;background:rgba(251,245,228,.92);border:1px solid #9C8656;border-radius:3px;padding:5px 8px;font:400 11.5px/1.35 var(--mono);max-width:min(330px,70%);color:#2B2119;pointer-events:none}
+.mapnote:empty{display:none}
+.maplibregl-ctrl-attrib{font:400 11px/1.3 var(--mono)!important;background:rgba(251,245,228,.85)!important;color:#2B2119}
+.maplibregl-ctrl-group{background:#FBF5E4!important;border:1px solid #9C8656}
+.maplibregl-popup-content{background:#FBF5E4;color:#2B2119;font:400 12.5px/1.45 var(--mono);border:1px solid #9C8656;border-radius:4px;padding:10px 12px;box-shadow:0 3px 12px rgba(60,40,10,.25);max-width:300px;max-height:320px;overflow:auto}
+.maplibregl-popup-content b.t{display:block;font:400 19px/1.15 var(--hand);color:#A3261B;margin-bottom:3px}
+.maplibregl-popup-content .k{color:#6E604E}
+.maplibregl-popup-content a{color:#A3261B}
+.maplibregl-popup-content ul{margin:4px 0 0;padding-left:16px}
+.maplibregl-popup-close-button{color:#2B2119;font-size:18px;padding:0 6px}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:#A3261B;text-underline-offset:3px;color:#A3261B}
+.info{background:var(--card);border:1px solid var(--border);padding:10px 12px;margin-top:10px;font:400 13px/1.5 var(--mono);min-height:52px}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px;align-items:center}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:6px;border-radius:50%;border:1px solid rgba(43,33,25,.5)}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+table.tbl{width:100%;border-collapse:collapse;font:400 13px/1.4 var(--mono)}
+table.tbl th{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 6px 6px 0;border-bottom:2px solid var(--fg);position:sticky;top:0;background:var(--card)}
+table.tbl td{padding:6px 6px 6px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+table.tbl td.r,table.tbl th.r{text-align:right;white-space:nowrap}
+table.tbl tr[data-k]{cursor:pointer}
+table.tbl tr[data-k]:hover td{background:var(--panel)}
+.tablebox{max-height:460px;overflow:auto;border:1px solid var(--border);background:var(--card);padding:0 10px}
+details{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 0;margin:18px 0;font-size:16px}
+summary{font:500 13px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--muted)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:#A3261B;border-color:#A3261B;color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media (max-width:600px){h2{font-size:28px}}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Names and places</span><span>Mountains of the world</span></div>
+<header class="hero">
+  <h1>Who's on the <span class="a">mountains?</span></h1>
+  <svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">Everest, Kosciuszko, Cook, Logan: many of the world's mountains carry a person's name. I linked 2,228 peaks, ranges and hills named after people to the places those people were born. Click a mountain and follow the line home.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: Wikidata (CC0); map: OpenStreetMap via OpenFreeMap, Natural Earth</div>
+
+<div class="stats">
+  <div><b>84%</b><span>of the peaks of Australia and New Zealand named after a person honour someone born on another continent</span></div>
+  <div><b>53%</b><span>of person-named peaks outside Europe and Antarctica honour someone born in Europe</span></div>
+  <div><b>5.1%</b><span>of the people on the mountains are women</span></div>
+  <div><b>29%</b><span>were scientists, against 19% royals, rulers or politicians</span></div>
+</div>
+
+<p class="lede">The highest mountain on Earth is named after a man who never saw it. George Everest, the Surveyor General of India, was born in Wales or England (the records disagree) and retired before his successor, Andrew Waugh, proposed his name for Peak XV in 1856; the Royal Geographical Society adopted it in 1865. Across the world, surveyors, explorers and colonial officials put the names of their bosses, patrons, monarchs and colleagues on mountains that already had names in the languages of the people who lived beneath them. Some of those names have since been given back.</p>
+<p>Wikidata, the open database behind Wikipedia, records what many mountains are named after and where most of those people were born. I joined the two for every mountain, summit, hill, volcano and range named after a person: 2,228 features, 2,241 namings and 2,010 people, 1,635 of them with a birthplace I could map. The question is the one I asked of the Moon. Whose world is it, on the map?</p>
+
+<h2><span class="n">01 · The map</span>From the peak to the cradle</h2>
+<p>Each triangle is a mountain named after a person, coloured by the continent where that person was born. Click one to draw the line home; click a birthplace to see every mountain named after the people born there. Filter by where the mountain is, or by what the person did.</p>
+<div class="bleed" id="atlas">
+<div class="controls">
+  <div class="scrollrow" id="contRow"><span class="ctl-l">Mountains in</span></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="occRow"><span class="ctl-l">Who</span></div>
+  <div class="srch"><input type="search" id="q" placeholder="Find a mountain or a person" aria-label="Find a mountain or a person" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+</div>
+<div class="maptitle"><span id="mtitle">Mountains named after people, and where the people were born</span><span id="mcount"></span></div>
+<div id="emap" class="lmap" role="application" aria-label="World map of mountains named after people, with lines to the birthplaces of those people"><div class="mapnote" id="enote"></div></div>
+<div class="info" id="info" aria-live="polite">Click a mountain or a birthplace.</div>
+<div class="legend" id="legend"></div>
+<p class="src">Triangles: mountains, coloured by the continent of birth of the person they honour (grey: birthplace not known). Circles: birthplaces, sized by the number of mountains. Lines: great circles from each mountain to its namesake's birthplace (on by default when a filter is chosen, and for the selected mountain). Base map: the Inked World style on OpenStreetMap data via OpenFreeMap.</p>
+</div>
+
+<h2><span class="n">02 · The colonial layer</span>Named from the other side of the world</h2>
+<p>In Europe the mountains are named after Europeans: 98% of European peaks named after a person honour someone born in Europe. Everywhere else, the names came with surveyors from far away. In Australia and New Zealand 84% honour someone born on another continent, 79% in Europe; in South America 71%; in North America 35%. Of New Zealand's person-named peaks with a mapped namesake, 88% honour someone born outside New Zealand, most of them in the United Kingdom; for Australia it is 84%. The typical line from a peak outside Europe and Antarctica to its namesake's birthplace is 3,289 km long, and the longest run from New Zealand to Britain and Portugal, almost to the other side of the globe: Mount Grey honours George Grey, Governor of New Zealand, born in Lisbon.</p>
+<div class="figure"><p class="fig-h">Where the honoured were born, by where the mountain is</p><p class="fig-sub">Mountains named after a person with a mapped birthplace, by the continent of the mountain (rows) and of the birthplace (colours). Hover a block.</p><div class="chart" id="colChart"></div><div class="legend" id="colLegend"></div></div>
+<p class="pull">Four in five of the person-named peaks of Australia and New Zealand honour someone born on another continent.</p>
+<p>Antarctica is the extreme case. Nobody is born there, so all 621 of its person-named features with a mapped namesake honour someone from elsewhere: 73% born in Europe and 16% in North America. And on Svalbard, where Norway has held sovereignty since 1925 after centuries of mostly foreign exploration, 73% of the person-named mountains honour people born outside Norway, above all Swedish, German and British scientists.</p>
+
+<h2><span class="n">03 · Who</span>Scientists, kings and presidents</h2>
+<p>Putting each person in one group (titles of rule first, then specific professions, then politics, then the rest), 29% of the people on the mountains were scientists and 19% royals, rulers or politicians, the largest group in North America and in Australia and New Zealand; 17% were explorers, mountaineers or aviators, 12% military or naval officers and 11% surveyors, geographers or cartographers. The surveyors named peaks after one another and after their superiors: the Surveyor General of India got the highest mountain on Earth, and the California Geological Survey of the 1860s put its leader Josiah Whitney, its members William Brewer and Charles Hoffmann and the geologist James Dwight Dana on the peaks of the High Sierra. The most honoured person in the data is the botanist Ferdinand von Mueller, with 6 features.</p>
+<div class="figure"><p class="fig-h">What the honoured people did</p><p class="fig-sub">Namings by the occupation group of the person, by continent of the mountain. Hover a block.</p><div class="chart" id="occChart"></div><div class="legend" id="occLegend"></div></div>
+
+<h2><span class="n">04 · The tallest</span>The highest peaks with a person's name</h2>
+<p>The tallest mountains named after people in Wikidata are Everest (8,849 m), Ismoil Somoni Peak (7,495 m), the highest point of Tajikistan, named after the Samanid ruler of the ninth century, and Lenin Peak (7,134 m) on the Kyrgyz and Tajik border. The Soviet Pamirs are full of revolutionaries and scientists. In North America the tallest is Denali, named Mount McKinley after the American president in federal use from 1917, renamed Denali in 2015 and Mount McKinley again by presidential order in 2025; the State of Alaska, which adopted Denali in 1975, still calls it Denali.</p>
+<div class="figure"><p class="fig-h">The fifteen highest</p><p class="fig-sub">Elevations as Wikidata gives them; where a value is higher than the country's highest point it is read as feet and converted. Click a row.</p><div class="tablebox"><table class="tbl" id="tallTable"></table></div></div>
+
+<h2><span class="n">05 · Women</span>One in twenty</h2>
+<p>Of the 2,224 namings whose person has a recorded sex, 113 honour a woman (5.1%). Queens and princesses are a large part of them (30%), from Mount Victoria to the Queen Maud Mountains, but so are scientists such as the astronomer Beatrice Tinsley and the botanist Nancy Burbidge, mountaineers such as Fay Fuller, and the aviators Amelia Earhart and Jean Batten. Among people born since 1900, 11.5% are women, against 3.9% of those born earlier.</p>
+
+<h2><span class="n">06 · Names given back</span>Denali, Aoraki, Kuwohi</h2>
+<p>Some of these names are being taken off the map. Wikidata records official renamings of person-named peaks: Mount McKinley became Denali in 2015 (and Mount McKinley again for the US federal government in 2025, though Alaska keeps Denali), Harney Peak in South Dakota became Black Elk Peak in 2016, Jeff Davis Peak in Nevada became Doso Doyabi in 2019, Mount Evans in Colorado became Mount Blue Sky in 2023, and Clingmans Dome in the Smoky Mountains became Kuwohi in 2024. Earlier, Mount Stalin in Canada became Mount Peck in 1987 and the Lenin Hills in Moscow went back to being the Sparrow Hills; Western Australia's King Leopold Ranges became the Wunaamin-Miliwundi Ranges in 2020. In New Zealand and Australia a gentler route is the dual name: Ōrongomai / Cass Peak, Takarunga / Mount Victoria, Ōwairaka / Mount Albert, Kunanyi / Mount Wellington, Kata Tjuta / Mount Olga, Mount MacKenzie / Pakihiwitahi, Aoraki / Mount Cook, Mount Grey / Maukatere and Mount Herbert / Te Ahu Pātiki. In 2022 the United States also replaced a slur for Native American women in the names of nearly 650 places; Wikidata records 96 of them that are hills, peaks or mountains.</p>
+<div class="figure"><p class="fig-h">Renamed mountains</p><p class="fig-sub">From Wikidata's dated official names and its "named after" links to former names.</p><div class="tablebox"><table class="tbl" id="renTable"></table></div></div>
+
+<h2><span class="n">07 · How I did this</span>Methods and caveats</h2>
+<p><b>Data.</b> Everything comes from Wikidata (CC0), queried through QLever: every mountain, summit, hill, volcano or range that is "named after" (P138) a human, with its coordinates, elevation and country, and the person's birthplace and its coordinates, date of birth, sex and occupations. I removed the duplicate rows the query makes for every occupation and type, left out 81 mountain passes (gaps, not mountains), 16 features on the Moon and Mars 6 undersea ridges and 3 features that are not mountains (two ravines and a road). Mountains and birthplaces are placed in modern countries and continents with Natural Earth; anything south of 60 degrees is Antarctica. Occupations are grouped by keyword. Wikidata often lists several, so each person goes in one group: titles of rule (monarch, president, governor) first, then specific professions (officer, surveyor, explorer or aviator, scientist, clergy), then politics without a title (politician, diplomat, lawyer), then arts and business, then generic labels (military personnel, engineer, university teacher, writer). Other rules give other shares; the order of the groups is robust, the exact percentages less so.</p>
+<p><b>Checks.</b> I read every mountain whose name does not contain its namesake's name (49 wrong links removed: the Galápagos islands linked to the English nobles of their old names, Lenin Peak linked to its former and its Tajik namesakes, Mount Clay to Ronald Reagan, former names such as Mount Stalin and Mount Pétain, and hills named after a saint through a church, chapel or shrine). I left 59 birthplaces off the map because Wikidata gives only a country, state, kingdom or empire (for example a birthplace of "England" placed at the middle of England), and corrected two (Lyon Playfair was born at Chunar in India, not in Haiti; Mount Olga, now Kata Tjuta, was named in 1872 after Queen Olga of Württemberg, not the later Grand Duchess Olga born in 1895). Elevations in Wikidata are sometimes in feet without saying so: 112 values are read as feet, those higher than their country's highest point and a few more found by hand. Wikidata is not a complete list of named mountains, and its coverage favours places with active editors (the Sierra Nevada, Svalbard, New Zealand). Modern borders are applied to old birthplaces, so a person born in the Russian Empire may count for Belarus or Ukraine.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>Wikidata contributors, Wikidata (CC0), queried with QLever (University of Freiburg). Vrandečić, D. and Krötzsch, M. (2014) Wikidata: a free collaborative knowledgebase. Communications of the ACM 57(10), 78 to 85.</li>
+<li>Natural Earth (public domain) for countries, continents and towns. Map: the Inked World style on OpenStreetMap data (ODbL) via OpenFreeMap.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.24075305">Read the paper</a><a href="https://github.com/Tristan-Hotham/mountain-names">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/mountain-names/">Blog post</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Who's on the mountains? The birthplaces of the people the world's mountains are named after. Zenodo. <a href="https://doi.org/10.5281/zenodo.24075305">10.5281/zenodo.24075305</a></p>
+<p>Data: Wikidata (CC0). Text, figures and derived data CC BY 4.0; code MIT. Map data © OpenStreetMap contributors (ODbL); Natural Earth.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/curated.js?v=1"></script>
+<script src="js/ink-palette.js?v=1"></script>
+<script src="js/ink-icons.js?v=1"></script>
+<script src="js/ink-houses.js?v=1"></script>
+<script src="js/ink-map.js?v=1"></script>
+<script src="js/ink-extras.js?v=1"></script>
+<script>
+const R = {"meta":{"page":"https://maps.tristanhotham.com/mountain-names/","repo":"https://github.com/Tristan-Hotham/mountain-names"},"source":{"rows":11175,"features":2228,"namings":2241,"people":2010,"people_located":1635,"located_namings":1852,"passes":81,"off_earth":16,"undersea":6,"not_mountains":3,"links_removed":49,"bp_unmapped":59,"bp_fixed":2,"names_fixed":3,"multi":13,"elev_known":1425,"elev_feet":112,"elev_bad":0,"antarctic":769,"antarctic_pct":34.52,"countries":69},"peak_cont":{"Europe":478,"North America":537,"Asia":60,"South America":46,"Africa":3,"Oceania":322,"Antarctica":769,"Ocean islands":13},"peak_countries":[{"country":"United States","n":348},{"country":"Svalbard (Norway)","n":306},{"country":"New Zealand","n":176},{"country":"Canada","n":166},{"country":"Australia","n":136},{"country":"Russia","n":32},{"country":"France","n":29},{"country":"Norway","n":26},{"country":"Austria","n":21},{"country":"Greenland","n":19},{"country":"Italy","n":18},{"country":"Argentina","n":15}],"cont":{"Europe":{"n":430,"other_pct":2.09,"europe_pct":97.91,"same_country_pct":17.21,"top_bcont":"Europe","bcont":{"Europe":421,"North America":4,"Oceania":2,"Asia":2,"Africa":1}},"North America":{"n":430,"other_pct":35.12,"europe_pct":34.19,"same_country_pct":59.77,"top_bcont":"North America","bcont":{"North America":279,"Europe":147,"Asia":3,"South America":1}},"Oceania":{"n":274,"other_pct":84.31,"europe_pct":79.56,"same_country_pct":13.5,"top_bcont":"Europe","bcont":{"Europe":218,"Oceania":43,"North America":8,"Asia":5}},"Asia":{"n":44,"other_pct":52.27,"europe_pct":52.27,"same_country_pct":40.91,"top_bcont":"Europe","bcont":{"Europe":23,"Asia":21}},"South America":{"n":41,"other_pct":70.73,"europe_pct":65.85,"same_country_pct":14.63,"top_bcont":"Europe","bcont":{"Europe":27,"South America":12,"Asia":2}},"Africa":{"n":1,"other_pct":100.0,"europe_pct":100.0,"same_country_pct":0.0,"top_bcont":"Europe","bcont":{"Europe":1}},"Ocean islands":{"n":11,"other_pct":100.0,"europe_pct":90.91,"same_country_pct":0.0,"top_bcont":"Europe","bcont":{"Europe":10,"South America":1}}},"anz":{"n":265,"other_pct":83.77,"europe_pct":78.87,"oceania_n":274},"outside":{"n":1231,"other_pct":36.96,"europe_born_pct":68.81,"same_country_pct":31.84,"noneurope_peaks_europe_born_pct":53.18,"noneurope_n":801},"antarctica":{"n":621,"europe_pct":73.27,"na_pct":16.26},"all_europe_born_pct":70.3,"countries":[{"country":"Svalbard (Norway)","n":278,"foreign_pct":73.02,"top_born":"Norway","top_foreign":["Sweden","Germany","United Kingdom"]},{"country":"United States","n":269,"foreign_pct":29.0,"top_born":"United States","top_foreign":["United Kingdom","Germany","France"]},{"country":"New Zealand","n":160,"foreign_pct":87.5,"top_born":"United Kingdom","top_foreign":["United Kingdom","Germany","France"]},{"country":"Canada","n":141,"foreign_pct":54.61,"top_born":"Canada","top_foreign":["United Kingdom","France","United States"]},{"country":"Australia","n":105,"foreign_pct":83.81,"top_born":"United Kingdom","top_foreign":["United Kingdom","Germany","Ireland"]},{"country":"Russia","n":30,"foreign_pct":46.67,"top_born":"Russia","top_foreign":["Belarus","Ukraine","France"]}],"country_n":{"Australia":{"country":"Australia","n":105,"foreign_pct":83.81,"top_born":"United Kingdom","top_foreign":["United Kingdom","Germany","Ireland"]},"Canada":{"country":"Canada","n":141,"foreign_pct":54.61,"top_born":"Canada","top_foreign":["United Kingdom","France","United States"]},"New Zealand":{"country":"New Zealand","n":160,"foreign_pct":87.5,"top_born":"United Kingdom","top_foreign":["United Kingdom","Germany","France"]},"Russia":{"country":"Russia","n":30,"foreign_pct":46.67,"top_born":"Russia","top_foreign":["Belarus","Ukraine","France"]},"Svalbard (Norway)":{"country":"Svalbard (Norway)","n":278,"foreign_pct":73.02,"top_born":"Norway","top_foreign":["Sweden","Germany","United Kingdom"]},"United States":{"country":"United States","n":269,"foreign_pct":29.0,"top_born":"United States","top_foreign":["United Kingdom","Germany","France"]}},"occ":{"royal":{"n":396,"pct":19.21,"name":"Royalty, rulers and politicians"},"military":{"n":244,"pct":11.84,"name":"Military and naval officers"},"survey":{"n":225,"pct":10.92,"name":"Surveyors, geographers and cartographers"},"explore":{"n":356,"pct":17.27,"name":"Explorers, mountaineers and aviators"},"science":{"n":605,"pct":29.35,"name":"Scientists"},"arts":{"n":112,"pct":5.43,"name":"Writers, artists and composers"},"religion":{"n":30,"pct":1.46,"name":"Saints and clergy"},"business":{"n":56,"pct":2.72,"name":"Business people and patrons"},"other":{"n":37,"pct":1.8,"name":"Others"}},"occ_unknown":180,"occ_names":{"royal":"Royalty, rulers and politicians","military":"Military and naval officers","survey":"Surveyors, geographers and cartographers","explore":"Explorers, mountaineers and aviators","science":"Scientists","arts":"Writers, artists and composers","religion":"Saints and clergy","business":"Business people and patrons","other":"Others"},"occ_cols":{"royal":"#7B57A8","military":"#2F5FA7","survey":"#2E9A8C","explore":"#C8322B","science":"#E0A11B","arts":"#9C7BC0","religion":"#B4532A","business":"#55803A","other":"#9C9284","unknown":"#C9C0B0"},"occ_by_cont":{"Europe":{"royal":61,"military":42,"survey":65,"explore":75,"science":159,"arts":15,"religion":11,"business":12,"other":5},"North America":{"royal":122,"military":66,"survey":34,"explore":76,"science":110,"arts":22,"religion":4,"business":16,"other":12},"Oceania":{"royal":83,"military":36,"survey":38,"explore":58,"science":67,"arts":13,"religion":3,"business":8,"other":5},"Asia":{"royal":14,"military":11,"survey":8,"explore":4,"science":3,"arts":9,"religion":3,"business":0,"other":2},"South America":{"royal":8,"military":6,"survey":4,"explore":13,"science":7,"arts":0,"religion":3,"business":1,"other":0},"Antarctica":{"royal":104,"military":82,"survey":75,"explore":124,"science":258,"arts":52,"religion":6,"business":19,"other":13}},"women":{"n":113,"known":2224,"pct":5.08,"people":106,"royal":34,"royal_pct":30.09,"men_royal_pct":17.1,"by_cont":{"Europe":{"n":19,"pct":3.97},"North America":{"n":30,"pct":5.66},"Oceania":{"n":21,"pct":6.48},"Antarctica":{"n":36,"pct":4.69}},"after1900_pct":11.47,"before1900_pct":3.92},"tallest":[{"name":"Mount Everest","elev":8849,"person":"George Everest","country":"Nepal and China","born":"United Kingdom","feet":false},{"name":"Ismoil Somoni Peak","elev":7495,"person":"Ismail Samani","country":"Tajikistan","born":"Uzbekistan","feet":false},{"name":"Lenin Peak","elev":7134,"person":"Vladimir Lenin","country":"Tajikistan","born":"Russia","feet":false},{"name":"Dzerzhinsky Peak","elev":6717,"person":"Felix Dzerzhinsky","country":"Tajikistan","born":"Belarus","feet":false},{"name":"Tipas","elev":6658,"person":"Walther Penck","country":"Argentina","born":"Austria","feet":false},{"name":"Parrota","elev":6277,"person":"Friedrich Parrot","country":"Tajikistan","born":"Germany","feet":false},{"name":"Przhevalsky peak","elev":6276,"person":"Nikolay Przhevalsky","country":"China","born":"","feet":false},{"name":"Cerro General Belgrano","elev":6250,"person":"Manuel Belgrano","country":"Argentina","born":"Argentina","feet":false},{"name":"Denali (Mount McKinley)","elev":6190,"person":"William McKinley","country":"United States","born":"United States","feet":false},{"name":"Churchill Peaks","elev":6167,"person":"Winston Churchill","country":"United States","born":"United Kingdom","feet":true},{"name":"Euler Peak","elev":6022,"person":"Leonhard Euler","country":"Kyrgyzstan","born":"Switzerland","feet":false},{"name":"Schlagintweit Peak","elev":5971,"person":"Adolf von Schlagintweit","country":"Pakistan","born":"Germany","feet":false},{"name":"Mount Logan","elev":5959,"person":"William Edmond Logan","country":"Canada","born":"Canada","feet":false},{"name":"Semyonov peak","elev":5816,"person":"Pyotr Semyonov-Tyan-Shansky","country":"Kazakhstan","born":"Russia","feet":false},{"name":"Pico Simón Bolívar","elev":5775,"person":"Simón Bolívar","country":"Colombia","born":"Venezuela","feet":false}],"dist":{"median_km":7641,"median_outside_km":3289,"over5000_pct":36.39,"longest":[{"name":"Mount Grey / Maukatere","person":"George Grey","km":19505,"country":"New Zealand","bctry":"Portugal"},{"name":"Mount Davy","person":"Humphry Davy","km":19122,"country":"New Zealand","bctry":"United Kingdom"},{"name":"Mount Sydney Dacres","person":"Sydney Dacres","km":19120,"country":"New Zealand","bctry":"United Kingdom"},{"name":"Whitcombe Peak","person":"Henry Whitcombe","km":19104,"country":"New Zealand","bctry":"United Kingdom"},{"name":"Mount Lort","person":"John Lort Stokes","km":19097,"country":"New Zealand","bctry":"United Kingdom"}]},"born_median":1853,"born_19c_pct":65.72,"cent":{"15":13,"16":36,"17":32,"18":254,"19":1417,"20":342},"top_people":[{"name":"Ferdinand von Mueller","n":6},{"name":"Jan Czerski","n":5},{"name":"Prince Albert of Saxe-Coburg and Gotha","n":5},{"name":"Queen Victoria","n":4},{"name":"Julius von Haast","n":4},{"name":"Alexander Karpinsky","n":4},{"name":"Alexander von Humboldt","n":4},{"name":"Fridtjof Nansen","n":4},{"name":"Ernest Shackleton","n":4},{"name":"John Tyndall","n":4},{"name":"James Dwight Dana","n":4},{"name":"Charles Swithinbank","n":3}],"dual":["Ōrongomai / Cass Peak","Takarunga / Mount Victoria","Ōwairaka / Mount Albert","Kunanyi / Mount Wellington","Kata Tjuta / Mount Olga","Mount MacKenzie / Pakihiwitahi","Aoraki / Mount Cook","Mount Grey / Maukatere","Mount Herbert / Te Ahu Pātiki"],"renamed":[{"name":"Denali","country":"United States","old_name":"Mount McKinley","old_person":"William McKinley","new_name":"Denali (2015); Mount McKinley again in US federal use from 2025","year":2015.0,"direction":"away from a person","source":"Wikidata official names (P1448) with start and end dates"},{"name":"Black Elk Peak","country":"United States","old_name":"Harney Peak","old_person":"William S. Harney","new_name":"Black Elk Peak (after the Lakota holy man Black Elk)","year":2016.0,"direction":"away from a person","source":"Wikidata official names (P1448)"},{"name":"Mount Blue Sky","country":"United States","old_name":"Mount Evans","old_person":"John Evans","new_name":"Mount Blue Sky","year":2023.0,"direction":"away from a person","source":"Wikidata official names (P1448)"},{"name":"Doso Doyabi","country":"United States","old_name":"Jeff Davis Peak","old_person":"Jefferson Davis","new_name":"Doso Doyabi","year":2019.0,"direction":"away from a person","source":"Wikidata official names (P1448)"},{"name":"Kuwohi","country":"United States","old_name":"Clingmans Dome","old_person":"Thomas Lanier Clingman","new_name":"Kuwohi","year":2024.0,"direction":"away from a person","source":"Wikidata official names (P1448)"},{"name":"Unnamed peak (formerly Mount Pétain)","country":"Canada","old_name":"Mount Pétain","old_person":"Philippe Pétain","new_name":"name rescinded; the peak is unnamed","year":2022.0,"direction":"away from a person","source":"Wikidata official names (P1448); British Columbia geographical names (2022)"},{"name":"Wunaamin-Miliwundi Ranges","country":"Australia","old_name":"King Leopold Ranges","old_person":"Leopold II of Belgium","new_name":"Wunaamin-Miliwundi Ranges","year":2020.0,"direction":"away from a person","source":"Wikidata named after (P138) still linking the former name"},{"name":"Mount Peck","country":"Canada","old_name":"Mount Stalin","old_person":"Joseph Stalin","new_name":"Mount Peck","year":1987.0,"direction":"away from a person","source":"Wikidata named after (P138) still linking the former name; renamed 1987"},{"name":"Sparrow Hills","country":"Russia","old_name":"Lenin Hills","old_person":"Vladimir Lenin","new_name":"Sparrow Hills","year":null,"direction":"away from a person","source":"Wikidata named after (P138) still linking the former name"},{"name":"Lenin Peak","country":"Kyrgyzstan and Tajikistan","old_name":"Kaufmann Peak","old_person":"Konstantin von Kaufman","new_name":"Lenin Peak (in Tajikistan also Abu Ali ibn Sino Peak)","year":null,"direction":"between people","source":"Wikidata named after (P138)"},{"name":"Dzyarzhynskaya Hara","country":"Belarus","old_name":"Skirmantava","old_person":null,"new_name":"Dzyarzhynskaya Hara (after Felix Dzerzhinsky)","year":1958.0,"direction":"to a person","source":"Wikidata official names (P1448)"},{"name":"Pik Bilibina","country":"Russia","old_name":"Snezhnaya","old_person":null,"new_name":"Pik Bilibina (after Yuri Bilibin)","year":2003.0,"direction":"to a person","source":"Wikidata official names (P1448)"}],"renamed_away":9,"renamed_to":2,"slur_renamed":96,"slur_year":"2022","checks":{"links_removed":49,"bp_unmapped":59}};
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const $ = id => document.getElementById(id);
+const tip = $("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", e => { if (!e.target.closest("svg")) hideTip(); });
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const hov = (n, h) => { n.addEventListener("mousemove", ev => showTip(h, ev.clientX, ev.clientY)); n.addEventListener("mouseleave", hideTip); n.addEventListener("click", ev => { ev.stopPropagation(); showTip(h, ev.clientX, ev.clientY); }); };
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const CONTS = ["Europe", "North America", "Asia", "South America", "Africa", "Oceania", "Antarctica", "Ocean islands"];
+const CCOL = { "Europe": "#2F5FA7", "North America": "#C8322B", "Asia": "#E0A11B", "South America": "#2E9A8C", "Africa": "#7B57A8", "Oceania": "#B4532A", "Antarctica": "#7C93A3", "Ocean islands": "#9C9284" };
+
+/* hero mark: a peak with a flag and a dashed line to a cottage */
+(function () {
+  const g = $("heroMark");
+  el("path", { d: "M8 96 L46 30 L60 52 L70 40 L104 96 Z", fill: "#EFE3C4", stroke: "currentColor", "stroke-width": 2.4, "stroke-linejoin": "round" }, g);
+  el("path", { d: "M38 44 L46 30 L54 44 L50 41 L46 46 L42 41 Z", fill: "#FFFFFF", stroke: "currentColor", "stroke-width": 1.4 }, g);
+  el("line", { x1: 46, y1: 30, x2: 46, y2: 12, stroke: "currentColor", "stroke-width": 2 }, g);
+  el("path", { d: "M46 12 l16 5 l-16 5z", fill: "#A3261B" }, g);
+  el("path", { d: "M62 17 Q100 10 108 62", stroke: "#A3261B", "stroke-width": 1.8, fill: "none", "stroke-dasharray": "4 3" }, g);
+  el("circle", { cx: 108, cy: 64, r: 4, fill: "#A3261B" }, g);
+})();
+
+/* ---------- charts ---------- */
+function stack100(box, rows, keys, cols, names, title, lw0) {
+  resp(box, (w, sm) => {
+    const lw = sm ? 92 : (lw0 || 120), rh = 28, h = rows.length * (rh + 8) + 6, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": title }, box);
+    rows.forEach((r, k) => { const y = 4 + k * (rh + 8); let x = lw; const tot = keys.reduce((a, q) => a + (r.v[q] || 0), 0);
+      lbl(svg, lw - 8, y + rh / 2 + 4, r.label, "lab b", "end");
+      keys.forEach((q, j) => { const v = r.v[q] || 0; if (!v) return; const ww = (w - lw - 2) * v / tot;
+        const b = el("rect", { x, y, width: Math.max(.5, ww - 1), height: rh, fill: cols[j] }, svg);
+        if (ww > 36) lbl(svg, x + 5, y + rh / 2 + 4, Math.round(100 * v / tot) + "%", "lab s w");
+        hov(b, `<b>${esc(r.label)}: ${esc(names[j])}</b><br>${fmt(v)} of ${fmt(tot)} (${(100 * v / tot).toFixed(1)}%)`); x += ww; }); });
+  });
+}
+function colChart() {
+  const rows = ["Europe", "North America", "Oceania", "South America", "Asia", "Antarctica"].map(c => ({ label: c.replace("North America", "N. America").replace("South America", "S. America"), v: c === "Antarctica" ? null : R.cont[c].bcont })).filter(r => r.v);
+  const keys = ["Europe", "North America", "Asia", "South America", "Africa", "Oceania"];
+  stack100($("colChart"), rows, keys, keys.map(k => CCOL[k]), keys, "Stacked bars: continent of birth of namesakes by continent of the mountain");
+  $("colLegend").innerHTML = keys.map(k => `<span><i style="background:${CCOL[k]}"></i>Born in ${k}</span>`).join("");
+}
+function occChart() {
+  const ks = Object.keys(R.occ_names), rows = ["Europe", "North America", "Oceania", "South America", "Asia", "Antarctica"].map(c => ({ label: c.replace("North America", "N. America").replace("South America", "S. America"), v: R.occ_by_cont[c] }));
+  stack100($("occChart"), rows, ks, ks.map(k => R.occ_cols[k]), ks.map(k => R.occ_names[k]), "Stacked bars: occupation groups of namesakes by continent");
+  $("occLegend").innerHTML = ks.map(k => `<span><i style="background:${R.occ_cols[k]}"></i>${esc(R.occ_names[k])}</span>`).join("");
+}
+function tables() {
+  $("tallTable").innerHTML = "<tr><th>Mountain</th><th class='r'>m</th><th>Named after</th><th>Born in</th></tr>" + R.tallest.map(t => `<tr data-k="${esc(t.name)}"><td>${esc(t.name)}</td><td class="r">${fmt(t.elev)}${t.feet ? "*" : ""}</td><td>${esc(t.person)}</td><td>${esc(t.born || "not mapped")}</td></tr>`).join("") + `<tr><td colspan="4" class="src">* converted from feet</td></tr>`;
+  $("renTable").innerHTML = "<tr><th>Now</th><th>Before</th><th>Honoured</th><th class='r'>Year</th></tr>" + R.renamed.map(t => `<tr><td>${esc(t.name)}</td><td>${esc(t.old_name)}</td><td>${esc(t.old_person || "")}</td><td class="r">${t.year ? Math.round(t.year) : ""}</td></tr>`).join("");
+  $("tallTable").querySelectorAll("tr[data-k]").forEach(tr => tr.onclick = () => { const k = K.find(k => k.name === tr.dataset.k); if (k) { pickPeak(k.i, true); $("atlas").scrollIntoView({ behavior: "smooth" }); } });
+}
+colChart(); occChart();
+
+/* ---------- the map ---------- */
+let K = [], P = [], SITE, emap, eReady = false, S = { cont: null, occ: null, sel: null, psel: null }, PLACES = {}, epop = null;
+const LY = { lines: true, births: true, peaks: true, mountains: true, forests: true, rivers: true, names_e: true, borders: true, modern: false };
+function gc(a, b, n = 48) {
+  const r = Math.PI / 180, [l1, p1] = [a[0] * r, a[1] * r], [l2, p2] = [b[0] * r, b[1] * r];
+  const v1 = [Math.cos(p1) * Math.cos(l1), Math.cos(p1) * Math.sin(l1), Math.sin(p1)], v2 = [Math.cos(p2) * Math.cos(l2), Math.cos(p2) * Math.sin(l2), Math.sin(p2)];
+  const d = Math.acos(Math.max(-1, Math.min(1, v1[0] * v2[0] + v1[1] * v2[1] + v1[2] * v2[2])));
+  if (d < 1e-6) return [[a]];
+  const pts = []; for (let i = 0; i <= n; i++) { const t = i / n, s1 = Math.sin((1 - t) * d) / Math.sin(d), s2 = Math.sin(t * d) / Math.sin(d);
+    const x = s1 * v1[0] + s2 * v2[0], y = s1 * v1[1] + s2 * v2[1], z = s1 * v1[2] + s2 * v2[2]; pts.push([Math.atan2(y, x) / r, Math.atan2(z, Math.hypot(x, y)) / r]); }
+  const segs = [[pts[0]]]; for (let i = 1; i < pts.length; i++) { if (Math.abs(pts[i][0] - pts[i - 1][0]) > 180) segs.push([]); segs[segs.length - 1].push(pts[i]); }
+  return segs.filter(s => s.length > 1);
+}
+const visible = k => (S.cont == null || k.cont === S.cont) && (S.occ == null || P[k.p].occ === S.occ);
+const pcol = p => p.cont >= 0 ? CCOL[CONTS[p.cont]] : "#BBB3A6";
+function peakGeo() { return { type: "FeatureCollection", features: K.filter(visible).map(k => ({ type: "Feature", id: k.i, properties: { i: k.i, c: pcol(P[k.p]), nm: k.name }, geometry: { type: "Point", coordinates: [k.lon, k.lat] } })) }; }
+function lineGeo(all) { const f = []; K.filter(k => (all ? visible(k) : k.i === S.sel) && P[k.p].lat != null).forEach(k => { const p = P[k.p]; gc([k.lon, k.lat], [p.lon, p.lat]).forEach(s => f.push({ type: "Feature", properties: { c: pcol(p) }, geometry: { type: "LineString", coordinates: s } })); }); return { type: "FeatureCollection", features: f }; }
+function birthGeo() { const g = {}; K.filter(visible).forEach(k => { const p = P[k.p]; if (p.lat == null) return; const key = p.lat.toFixed(2) + "," + p.lon.toFixed(2); (g[key] = g[key] || { key, lon: p.lon, lat: p.lat, n: 0, c: pcol(p), ps: new Set() }); g[key].n++; g[key].ps.add(p.i); });
+  PLACES = g; return { type: "FeatureCollection", features: Object.values(g).map(x => ({ type: "Feature", properties: { k: x.key, n: x.n, c: x.c }, geometry: { type: "Point", coordinates: [x.lon, x.lat] } })) }; }
+function setData() {
+  if (!eReady) return;
+  emap.getSource("pk").setData(peakGeo()); emap.getSource("bp").setData(birthGeo());
+  emap.getSource("ln").setData(lineGeo(S.cont != null || S.occ != null)); emap.getSource("lsel").setData(lineGeo(false));
+  emap.setFilter("pksel", ["==", ["get", "i"], S.sel ?? -1]);
+  { const vk = K.filter(visible); $("mcount").textContent = `${fmt(new Set(vk.map(k => k.mid)).size)} mountains, ${fmt(vk.length)} namings`; }
+  $("legend").innerHTML = CONTS.slice(0, 6).map(c => `<span><i style="background:${CCOL[c]}"></i>Born in ${c}</span>`).join("") + `<span><i style="background:#BBB3A6"></i>Birthplace not mapped</span>`;
+}
+function life(p) { return p.born != null ? `born ${p.born < 0 ? -p.born + " BC" : p.born}` : ""; }
+window.pickPeak = function (i, fly) {
+  const k = K[i], p = P[k.p]; S.sel = i; setData();
+  const occ = SITE.occ[p.occ][1];
+  const h = `<b class="t">${esc(k.name)}</b><span class="k">${esc(k.types)}${k.elev ? ", " + fmt(k.elev) + " m" : ""} · ${esc(k.country)}</span><br>Named after <b>${esc(p.name)}</b> <span class="k">(${esc(life(p))}${p.sex === "female" ? ", a woman" : ""})</span><br><span class="k">${esc(occ)}${p.occs ? ": " + esc(p.occs.split("; ").slice(0, 3).join(", ")) : ""}</span><br>Born: ${p.lat != null ? esc(p.bp) + (p.country ? ", " + esc(p.country) : "") + (k.dist != null ? ` <span class="k">(${fmt(k.dist)} km away)</span>` : "") : "<span class='k'>not mapped</span>"}<br><a href="https://www.wikidata.org/wiki/${k.mid}" target="_blank" rel="noopener">Mountain</a> · <a href="https://www.wikidata.org/wiki/${p.pid}" target="_blank" rel="noopener">Person</a> <span class="k">on Wikidata</span>`;
+  if (epop) epop.remove(); epop = new maplibregl.Popup({ maxWidth: "300px", focusAfterOpen: false }).setLngLat([k.lon, k.lat]).setHTML(h).addTo(emap);
+  $("info").innerHTML = `<b>${esc(k.name)}</b> honours ${esc(p.name)}` + (p.lat != null ? `, born in ${esc(p.bp)}${p.country ? ", " + esc(p.country) : ""}${k.dist != null ? ", " + fmt(k.dist) + " km from the mountain" : ""}.` : ", whose birthplace is not mapped.");
+  if (fly) { if (p.lat != null) { const b = new maplibregl.LngLatBounds([k.lon, k.lat], [k.lon, k.lat]); b.extend([p.lon, p.lat]); emap.fitBounds(b, { padding: 70, maxZoom: 6, duration: 900 }); } else emap.flyTo({ center: [k.lon, k.lat], zoom: 5 }); }
+};
+window.pickPlace = function (key) {
+  const pl = PLACES[key]; if (!pl) return; const ks = K.filter(k => visible(k) && pl.ps.has(k.p));
+  const p0 = P[[...pl.ps][0]];
+  const items = ks.map(k => `<li><span class="go" data-k="${k.i}">${esc(k.name)}</span> <span class="k">for ${esc(P[k.p].name)}</span></li>`).join("");
+  if (epop) epop.remove(); epop = new maplibregl.Popup({ maxWidth: "300px", focusAfterOpen: false }).setLngLat([pl.lon, pl.lat]).setHTML(`<b class="t">${esc(p0.bp)}</b><span class="k">${esc(p0.country)} · birthplace</span><ul>${items}</ul>`).addTo(emap);
+  epop.getElement().querySelectorAll(".go").forEach(g => g.onclick = () => pickPeak(+g.dataset.k, true));
+  S.psel = key; $("info").innerHTML = `<b>${esc(p0.bp)}</b>: birthplace of the people behind ${ks.length} mountain${ks.length > 1 ? "s" : ""}.`;
+};
+function layerPanel() {
+  const d = document.createElement("div"); d.className = "maplibregl-ctrl lyrCtl";
+  d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button><div class="lyrPanel" hidden><h5>Data</h5><label><input type="checkbox" data-k="peaks"> Mountains</label><label><input type="checkbox" data-k="births"> Birthplaces</label><label><input type="checkbox" data-k="lines"> Lines to birthplaces</label><h5>The inked map</h5><label><input type="checkbox" data-k="mountains"> Ink mountains and hills</label><label><input type="checkbox" data-k="forests"> Forests and moor</label><label><input type="checkbox" data-k="rivers"> Rivers and lakes</label><label><input type="checkbox" data-k="names_e"> Place names</label><label><input type="checkbox" data-k="borders"> Borders</label><label><input type="checkbox" data-k="modern"> Plain modern map</label></div>`;
+  ["click", "dblclick", "mousedown", "touchstart", "wheel"].forEach(t => d.addEventListener(t, e => e.stopPropagation(), { passive: t !== "click" }));
+  emap.addControl({ onAdd() { return d; }, onRemove() { d.remove(); } }, "top-left");
+  const btn = d.querySelector(".lyrBtn"), pan = d.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  pan.querySelectorAll("[data-k]").forEach(i => { i.checked = !!LY[i.dataset.k]; i.addEventListener("change", () => { LY[i.dataset.k] = i.checked; applyLayers(); }); });
+}
+function applyLayers() {
+  if (!eReady) return; const v = x => x ? "visible" : "none";
+  ["pk", "pksel", "pkname"].forEach(l => emap.setLayoutProperty(l, "visibility", v(LY.peaks)));
+  emap.setLayoutProperty("bp", "visibility", v(LY.births)); ["ln", "lsel"].forEach(l => emap.setLayoutProperty(l, "visibility", v(LY.lines)));
+  const m = LY.modern;
+  [["mountains", LY.mountains], ["forests", LY.forests], ["rivers", LY.rivers], ["names", LY.names_e], ["borders", LY.borders]].forEach(([g, on]) => { try { InkMap.setGroup(emap, g, on && !(m && ["mountains", "forests"].includes(g))); } catch (e) {} });
+  try { InkMap.setGroup(emap, "paper", !m); InkMap.setGroup(emap, "modern", m); InkMap.setGroup(emap, "coast", !m); } catch (e) {}
+}
+function foldAttr(m) { const go = () => m.getContainer().querySelectorAll(".maplibregl-ctrl-attrib.maplibregl-compact").forEach(a => { a.classList.remove("maplibregl-compact-show"); a.removeAttribute("open"); }); m.once("idle", go); go(); }
+function initMap() {
+  const opts = { workerConfig: { heritage: "", hills: "", places: "" }, mapOptions: { center: [20, 25], zoom: innerWidth < 600 ? 0.2 : 1.1, renderWorldCopies: false } };
+  InkMap.create("emap", opts).then(m => {
+    emap = m; foldAttr(emap);
+    emap.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
+    if (InkMap.setWinter) InkMap.setWinter(emap, false);
+    ["heritage", "flight", "animals", "farms", "towns", "roads"].forEach(g => { try { InkMap.setGroup(emap, g, false); } catch (e) {} });
+    emap.addSource("ln", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+    emap.addLayer({ id: "ln", type: "line", source: "ln", paint: { "line-color": ["get", "c"], "line-width": 1, "line-opacity": .45 } });
+    emap.addSource("lsel", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+    emap.addLayer({ id: "lsel", type: "line", source: "lsel", paint: { "line-color": "#A3261B", "line-width": 2.6, "line-dasharray": [2, 1.2] } });
+    emap.addSource("bp", { type: "geojson", data: { type: "FeatureCollection", features: [] }, attribution: "Mountains and people: <a href='https://www.wikidata.org/' target='_blank'>Wikidata</a> (CC0)" });
+    emap.addLayer({ id: "bp", type: "circle", source: "bp", paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, ["+", 1.8, ["*", 1.4, ["sqrt", ["get", "n"]]]], 6, ["+", 4, ["*", 2.2, ["sqrt", ["get", "n"]]]]], "circle-color": "#FBF5E4", "circle-stroke-color": ["get", "c"], "circle-stroke-width": 1.6 } });
+    emap.addSource("pk", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+    // review fix: the Ink fonts have no "▲" glyph, so the text triangles never drew; triangles are now icons drawn on demand per colour
+    emap.on("styleimagemissing", e => { if (!e.id.startsWith("tri-") || emap.hasImage(e.id)) return; const n = 40, cv = document.createElement("canvas"); cv.width = cv.height = n; const x = cv.getContext("2d");
+      x.beginPath(); x.moveTo(n / 2, 3); x.lineTo(n - 3, n - 5); x.lineTo(3, n - 5); x.closePath(); x.fillStyle = e.id.slice(4); x.fill(); x.lineWidth = 2.6; x.strokeStyle = "#2B2119"; x.stroke();
+      emap.addImage(e.id, x.getImageData(0, 0, n, n), { pixelRatio: 2 }); });
+    emap.addLayer({ id: "pk", type: "symbol", source: "pk", layout: { "icon-image": ["concat", "tri-", ["get", "c"]], "icon-size": ["interpolate", ["linear"], ["zoom"], 0, 0.5, 6, 0.85], "icon-allow-overlap": true, "icon-ignore-placement": true } });
+    emap.addLayer({ id: "pksel", type: "circle", source: "pk", filter: ["==", ["get", "i"], -1], paint: { "circle-radius": 11, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#A3261B", "circle-stroke-width": 3 } });
+    emap.addLayer({ id: "pkname", type: "symbol", source: "pk", minzoom: 5, layout: { "text-field": ["get", "nm"], "text-font": ["Ink Italic"], "text-size": 13, "text-variable-anchor": ["left", "right", "top"], "text-radial-offset": .9 }, paint: { "text-color": "#2B2119", "text-halo-color": "rgba(246,238,216,.95)", "text-halo-width": 1.6 } });
+    emap.on("click", "pk", e => { e.preventDefault(); pickPeak(e.features[0].properties.i, false); });
+    emap.on("click", "bp", e => { if (e.defaultPrevented) return; pickPlace(e.features[0].properties.k); });
+    ["pk", "bp"].forEach(l => { emap.on("mouseenter", l, () => emap.getCanvas().style.cursor = "pointer"); emap.on("mouseleave", l, () => emap.getCanvas().style.cursor = ""); });
+    eReady = true; layerPanel(); applyLayers(); setData();
+  }).catch(e => { console.error(e); $("enote").textContent = "The map could not load: " + e.message; });
+}
+function search() {
+  const q = $("q"), sug = $("sug"); let hits = [], ai = -1;
+  const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const IDX = K.map(k => [norm(k.name), "k", k.i]).concat(P.map(p => [norm(p.name), "p", p.i]));
+  q.oninput = () => { const s = norm(q.value.trim()); if (s.length < 2) { sug.style.display = "none"; return; }
+    hits = IDX.filter(x => x[0].includes(s)).sort((a, b) => (a[0].startsWith(s) ? 0 : 1) - (b[0].startsWith(s) ? 0 : 1)).slice(0, 12); ai = 0;
+    sug.innerHTML = hits.map((h, j) => `<li role="option" aria-selected="${j === 0}" data-j="${j}">${h[1] === "k" ? esc(K[h[2]].name) + ` <span>${esc(K[h[2]].country)}</span>` : esc(P[h[2]].name) + ` <span>person</span>`}</li>`).join("");
+    sug.style.display = hits.length ? "block" : "none"; sug.querySelectorAll("li").forEach(li => li.onclick = () => choose(+li.dataset.j)); };
+  q.onkeydown = e => { if (e.key === "Enter" && hits.length) { choose(Math.max(0, ai)); e.preventDefault(); } else if (e.key === "Escape") sug.style.display = "none"; };
+  function choose(j) { const h = hits[j]; sug.style.display = "none"; if (!h) return; if (h[1] === "k") pickPeak(h[2], true); else { const k = K.find(k => k.p === h[2]); if (k) pickPeak(k.i, true); } }
+}
+fetch("data/site.json").then(r => r.json()).then(s => {
+  SITE = s;
+  P = s.people.map((a, i) => { const o = { i }; s.pcols.forEach((c, j) => o[c] = a[j]); return o; });
+  K = s.peaks.map((a, i) => { const o = { i }; s.kcols.forEach((c, j) => o[c] = a[j]); return o; });
+  const cr = $("contRow"); const ab = document.createElement("button"); ab.className = "btn"; ab.textContent = "Everywhere"; ab.setAttribute("aria-pressed", "true"); ab.onclick = () => setCont(null); cr.appendChild(ab);
+  ["Europe", "North America", "Oceania", "South America", "Asia", "Antarctica"].forEach(c => { const b = document.createElement("button"); b.className = "btn"; b.dataset.c = s.conts.indexOf(c); b.textContent = c; b.setAttribute("aria-pressed", "false"); b.onclick = () => setCont(s.conts.indexOf(c)); cr.appendChild(b); });
+  const orow = $("occRow"); const ob = document.createElement("button"); ob.className = "btn"; ob.textContent = "Everyone"; ob.setAttribute("aria-pressed", "true"); ob.onclick = () => setOcc(null); orow.appendChild(ob);
+  s.occ.slice(0, 8).forEach(([k, n, c], j) => { const b = document.createElement("button"); b.className = "btn"; b.dataset.o = j; b.innerHTML = `<i style="background:${c}"></i>${esc(n)}`; b.setAttribute("aria-pressed", "false"); b.onclick = () => setOcc(j); orow.appendChild(b); });
+  window.setCont = c => { S.cont = c; cr.querySelectorAll(".btn").forEach(b => b.setAttribute("aria-pressed", String(c == null ? !b.dataset.c : b.dataset.c == c))); setData(); };
+  window.setOcc = o => { S.occ = o; orow.querySelectorAll(".btn").forEach(b => b.setAttribute("aria-pressed", String(o == null ? !b.dataset.o : b.dataset.o == o))); setData(); };
+  tables(); search(); initMap();
+});
+$("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; if (emap && InkMap.setSeaTone) InkMap.setSeaTone(emap, isDark()); };
+</script>
+<!-- map-fullscreen v1 -->
+<style id="mfs-style">
+.mfs-btn{position:absolute;top:10px;right:10px;z-index:1001;width:34px;height:34px;border:2px solid rgba(0,0,0,.25);border-radius:4px;background:#fff;color:#222;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.mfs-btn:hover{background:#f2f2f2}
+.mfs-btn svg{width:18px;height:18px}
+.mfs-host.mfs-btn-left .mfs-btn{right:auto;left:54px}
+.mfs-fake{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;max-width:none!important;max-height:none!important;margin:0!important;z-index:100000!important;border-radius:0!important}
+html.mfs-lock,html.mfs-lock body{overflow:hidden!important}
+:fullscreen.mfs-host{width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;margin:0!important;border-radius:0!important}
+</style>
+<script id="mfs-script">
+(function(){
+  var ICON_OPEN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+  var ICON_CLOSE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>';
+  function poke(){setTimeout(function(){window.dispatchEvent(new Event('resize'));},60);setTimeout(function(){window.dispatchEvent(new Event('resize'));},400);}
+  function realFS(){return document.fullscreenElement||document.webkitFullscreenElement;}
+  function add(el){
+    if(el.__mfs)return; el.__mfs=1;
+    var cs=getComputedStyle(el); if(cs.position==='static')el.style.position='relative';
+    el.classList.add('mfs-host');
+    // avoid clashing with a top-right Leaflet control (e.g. "Map layers")
+    var tr=el.querySelector('.leaflet-top.leaflet-right');
+    if(tr&&tr.children.length){ el.classList.add('mfs-btn-left'); }
+    var b=document.createElement('button'); b.type='button'; b.className='mfs-btn';
+    b.title='Full screen map'; b.setAttribute('aria-label','Full screen map'); b.innerHTML=ICON_OPEN;
+    ['click','dblclick','mousedown','touchstart','wheel'].forEach(function(t){b.addEventListener(t,function(e){e.stopPropagation();},{passive:t!=='click'});});
+    function setIcon(on){b.innerHTML=on?ICON_CLOSE:ICON_OPEN;b.title=on?'Exit full screen':'Full screen map';b.setAttribute('aria-label',b.title);}
+    function exitFake(){el.classList.remove('mfs-fake');document.documentElement.classList.remove('mfs-lock');setIcon(false);poke();}
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      if(el.classList.contains('mfs-fake')){exitFake();return;}
+      if(realFS()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);return;}
+      var req=el.requestFullscreen||el.webkitRequestFullscreen;
+      if(req){ try{ var p=req.call(el); if(p&&p.catch)p.catch(function(){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();}); }catch(err){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();} }
+      else { el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke(); }
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&el.classList.contains('mfs-fake'))exitFake();});
+    ['fullscreenchange','webkitfullscreenchange'].forEach(function(t){document.addEventListener(t,function(){setIcon(realFS()===el);poke();});});
+    el.appendChild(b);
+  }
+  function scan(){
+    var els=document.querySelectorAll('[data-fullscreen-map], .leaflet-container, .maplibregl-map, .mapboxgl-map');
+    els.forEach(function(el){
+      if(el.closest('.mfs-host')&&!el.classList.contains('mfs-host'))return;
+      var r=el.getBoundingClientRect(); if(r.width<200||r.height<150)return;
+      add(el);
+    });
+  }
+  function start(){scan(); var n=0; var t=setInterval(function(){scan(); if(++n>20)clearInterval(t);},500);}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start); else start();
+})();
+</script>
+<!-- /map-fullscreen -->
+
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>
