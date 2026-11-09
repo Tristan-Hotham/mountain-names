@@ -269,7 +269,7 @@ colChart(); occChart();
 
 /* ---------- the map ---------- */
 let K = [], P = [], SITE, emap, eReady = false, S = { cont: null, occ: null, sel: null, psel: null }, PLACES = {}, epop = null;
-const LY = { lines: true, births: true, peaks: true, mountains: true, forests: true, rivers: true, names_e: true, borders: true, modern: true };
+const LY = { lines: true, births: true, peaks: true, mountains: false, forests: false, rivers: true, names_e: true, borders: true, modern: true };
 function gc(a, b, n = 48) {
   const r = Math.PI / 180, [l1, p1] = [a[0] * r, a[1] * r], [l2, p2] = [b[0] * r, b[1] * r];
   const v1 = [Math.cos(p1) * Math.cos(l1), Math.cos(p1) * Math.sin(l1), Math.sin(p1)], v2 = [Math.cos(p2) * Math.cos(l2), Math.cos(p2) * Math.sin(l2), Math.sin(p2)];
